@@ -39,14 +39,13 @@ const DEFAULT_HOSTS = [
     capabilityLabel: "Easiest path",
     ctaLabel: "Add to Cursor",
     summary:
-      "The simplest way to start Iris if you want review, critique, and build guidance close to the work.",
+      "The easiest place to bring Iris close to the work when you want review and direction without much setup.",
     setupCopy:
-      "Start free, open the Iris connection details, then use the shortest Cursor MCP path to add Iris without learning the full backend story first.",
+      "Unlock one Iris connection, paste it into Cursor, and start with a review-first prompt.",
     steps: [
-      "Continue with the free Iris path first.",
-      "Open the Iris connection details for Cursor.",
-      "Use your Iris connection URL and personal Iris token in Cursor.",
-      "Start with the suggested first prompt so Iris can review before changing anything."
+      "Start free once from the Iris site.",
+      "Add the Iris connection in Cursor.",
+      "Begin with the first prompt so Iris reviews before changing anything."
     ],
     firstPrompt: "Review this project first and tell me the safest next step before we change anything.",
     irisCoreSummary:
@@ -62,13 +61,12 @@ const DEFAULT_HOSTS = [
     capabilityLabel: "Technical install",
     ctaLabel: "Start in Codex",
     summary:
-      "The cleanest technical install when you want Iris to stay close to structure, systems, and implementation work.",
+      "The cleanest technical path when you want Iris near build, review, and system work.",
     setupCopy:
-      "Start free, copy one Codex command, and keep Iris available as the review-first layer before you move into edits or build work.",
+      "Copy one setup block into Codex, then start with a review-first prompt.",
     steps: [
-      "Continue with the free Iris path first.",
-      "Copy the Codex command or use the fallback config route.",
-      "Use your Iris connection URL and personal Iris token.",
+      "Start free once from the Iris site.",
+      "Paste the setup block into Codex.",
       "Start with a review-first prompt before implementation."
     ],
     firstPrompt: "Review this codebase and the design system before we implement the next change.",
@@ -85,14 +83,13 @@ const DEFAULT_HOSTS = [
     capabilityLabel: "Guided install",
     ctaLabel: "Set up in ChatGPT",
     summary:
-      "A broad, familiar surface for product thinking, critique, and direction before the work hardens.",
+      "A familiar place to use Iris for product thinking, critique, and careful direction.",
     setupCopy:
-      "Start free, open the ChatGPT setup steps, then add Iris with the shared connection details once you are ready.",
+      "Turn on Developer mode, add Iris once, and keep the same connection for future sessions.",
     steps: [
-      "Continue with the free Iris path first.",
-      "Open the ChatGPT install steps.",
-      "Add Iris using your Iris connection URL and personal Iris token.",
-      "Start with the suggested first prompt and let Iris explain the safest next step."
+      "Turn on Developer mode in ChatGPT settings.",
+      "Add Iris as a remote connection.",
+      "Start with the first prompt and let Iris explain the safest next step."
     ],
     firstPrompt: "Review this page and tell me what is working before we decide what to change.",
     irisCoreSummary:
@@ -108,14 +105,13 @@ const DEFAULT_HOSTS = [
     capabilityLabel: "Guided install",
     ctaLabel: "Set up in Claude",
     summary:
-      "A guided setup for calm critique, product framing, and review-first reasoning when you want a quieter surface.",
+      "A quieter guided path for critique, framing, and review-first reasoning.",
     setupCopy:
-      "Start free, open the Claude setup steps, then add Iris with the same shared connection details used by the other supported hosts.",
+      "Add the Iris connection in Claude MCP settings, then start with the first prompt.",
     steps: [
-      "Continue with the free Iris path first.",
-      "Open the Claude install steps.",
-      "Use your Iris connection URL and personal Iris token for the Iris connection.",
-      "Start with the suggested first prompt so Iris reviews before proposing changes."
+      "Open Claude MCP setup for a remote server.",
+      "Paste in the Iris connection details.",
+      "Start with the first prompt so Iris reviews before proposing changes."
     ],
     firstPrompt: "Review this interface and tell me what deserves attention before we make changes.",
     irisCoreSummary:

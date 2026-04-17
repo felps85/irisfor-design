@@ -45,7 +45,7 @@ async function fetchJson(url, options = {}) {
     response = await fetch(url, options);
   } catch {
     throw new Error(
-      "Unable to reach Iris right now. The website may not be allowed yet, or the request may have been blocked before it reached Iris."
+      "Unable to reach Iris right now. Please try again in a moment. If this keeps happening, send a support request and we will look at it."
     );
   }
 

@@ -457,7 +457,7 @@ pre {
 .quiet-list,
 .guided-steps {
   margin: 0;
-  padding-left: 1.1rem;
+  padding-left: 1rem;
   color: var(--muted-strong);
 }
 
@@ -532,7 +532,7 @@ pre {
 
 .faq-item p {
   margin-top: 0.55rem;
-  max-width: 46rem;
+  max-width: 40rem;
 }
 
 .site-footer {
@@ -617,8 +617,8 @@ pre {
 
 .selected-surface {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 1.08fr);
-  gap: 2rem;
+  grid-template-columns: minmax(0, 0.88fr) minmax(320px, 1.12fr);
+  gap: 1.75rem;
   padding-top: 1.2rem;
 }
 
@@ -630,7 +630,7 @@ pre {
 }
 
 .selected-surface__panel {
-  padding-left: 1.6rem;
+  padding-left: 1.3rem;
   border-left: 1px solid var(--line);
 }
 
@@ -661,7 +661,7 @@ pre {
 .prompt-note {
   display: grid;
   gap: 0.55rem;
-  padding: 1rem 1rem 1.05rem;
+  padding: 0.95rem 1rem 1rem;
   border: 1px solid var(--line);
   border-radius: 1rem;
   background: #ffffff;
@@ -796,26 +796,27 @@ pre {
 
 .support-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.25fr) minmax(280px, 0.75fr);
-  gap: 2rem;
+  grid-template-columns: 1fr;
+  gap: 1.4rem;
   align-items: start;
+  max-width: 48rem;
 }
 
 .support-form {
   display: grid;
-  gap: 1.15rem;
+  gap: 1rem;
 }
 
 .support-note {
   display: grid;
-  gap: 0.75rem;
-  padding-left: 1.6rem;
-  border-left: 1px solid var(--line);
+  gap: 0.6rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line);
 }
 
 .form-grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 1rem;
 }
 
@@ -847,7 +848,7 @@ pre {
 }
 
 .support-form textarea {
-  min-height: 8.5rem;
+  min-height: 7rem;
   resize: vertical;
 }
 

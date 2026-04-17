@@ -58,14 +58,14 @@ function renderSupportPage() {
     <section class="hero-section inner-hero">
       <div class="hero-copy">
         <p class="overline">Support</p>
-        <h1 class="display-title">Tell us what you were trying to do and where the beta got in the way.</h1>
+        <h1 class="display-title">Tell us where the beta got in the way.</h1>
         <p class="lead">
-          Iris is still in public beta. If something feels broken, unclear, or more technical than it
-          should, use this form so we get the right context the first time.
+          If something feels broken, unclear, or more technical than it should, use this form so we get
+          the right context the first time.
         </p>
       </div>
       <aside class="hero-panel">
-        <p class="utility-label">Best support requests include</p>
+        <p class="utility-label">Best when you include</p>
         <ul class="quiet-list compact-list">
           <li>which surface you were using</li>
           <li>what you expected to happen</li>
@@ -81,7 +81,7 @@ function renderSupportPage() {
         <h2>Send one clear support request.</h2>
         <p>
           This stays lightweight for now. The form will either open your email app or copy a ready-to-send
-          support message if we have not wired the final inbox yet.
+          support message if the final inbox is not wired yet.
         </p>
       </div>
 

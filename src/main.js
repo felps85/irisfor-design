@@ -230,23 +230,20 @@ function buildHostSetupBlock(host, supportHref) {
   if (!state.tokenBundle?.token) {
     return `
       <div class="connection-panel connection-panel--simple">
-        <p class="utility-label">Free beta access</p>
+        <p class="utility-label">Start free</p>
         <p class="connection-intro">
-          Start free and we will reveal the exact Iris connection details for ${escapeHtml(host.name)}.
+          One free Iris start reveals the exact setup for ${escapeHtml(host.name)}.
         </p>
+        <p class="setup-note">We only show the pieces you need for this host.</p>
         <div class="inline-actions">
           <button class="button button-primary" data-action="continue-free">
             ${state.actionState === "loading" ? "Starting…" : escapeHtml(host.ctaLabel || "Start Iris")}
           </button>
-          <a class="button-link" href="#how-it-works">See how it works</a>
         </div>
         <p class="status-copy">No payment is required during beta.</p>
       </div>
     `;
   }
-
-  const endpoint = state.installModel.endpoint;
-  const token = state.tokenBundle.token;
 
   if (host.id === "codex") {
     return `
@@ -268,21 +265,7 @@ function buildHostSetupBlock(host, supportHref) {
     `;
   }
 
-  const guidedSteps =
-    host.id === "chatgpt"
-      ? [
-          "Turn on Developer mode in ChatGPT settings.",
-          "Create an app or connector from a remote MCP server.",
-          "Use the Iris setup details when ChatGPT asks for the connection.",
-          "Open a conversation, select Iris, and start with the first prompt."
-        ]
-      : host.id === "claude"
-        ? [
-            "Open Claude MCP setup for a remote server.",
-            "Use the Iris setup details when Claude asks for the connection.",
-            "Start with the first prompt so Iris reviews before suggesting changes."
-          ]
-        : host.steps || [];
+  const guidedSteps = host.steps || [];
 
   return `
     <div class="connection-panel">
@@ -401,7 +384,7 @@ function renderHomePage() {
         <h2>Pick the host that fits the work and start from the same review-first posture.</h2>
         <p>
           Cursor is the easiest path. Codex is the cleanest technical path. ChatGPT and Claude stay
-          guided. Figma remains part of the broader beta, but it is not the main onboarding story here.
+          guided. Figma is part of the broader beta, but not the main onboarding story here.
         </p>
       </div>
       ${renderSurfaceTabs()}
@@ -412,7 +395,6 @@ function renderHomePage() {
           <p class="overline">${escapeHtml(host.capabilityLabel || "")}</p>
           <h2>${escapeHtml(host.name)}</h2>
           <p>${escapeHtml(host.summary)}</p>
-          <p class="host-detail">${escapeHtml(host.setupCopy || "")}</p>
         </div>
         <div class="selected-surface__panel">
           ${buildHostSetupBlock(host, supportHref)}
@@ -448,7 +430,7 @@ function renderHomePage() {
         <h2>Keep the beta boundaries visible.</h2>
         <p>
           Iris should make it easy to understand how to start, what the free path includes, and how to
-          ask for help without making the support path feel hidden.
+          get help without sending people through a maze.
         </p>
       </div>
       ${renderTrustPoints()}
@@ -491,7 +473,7 @@ async function handleContinueFree() {
       state.installModel = mergeInstallModel(state.installModel, bundle.install);
     }
 
-    state.notice = `Iris is ready for ${host.name}. Copy the connection details below and start with the suggested first prompt.`;
+    state.notice = `Iris is ready for ${host.name}. Copy the setup below, then start with the suggested first prompt.`;
   } catch (error) {
     state.error = error instanceof Error ? error.message : "Unable to start Iris from this page.";
   } finally {

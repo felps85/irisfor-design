@@ -66,17 +66,17 @@ export const FAQ_ITEMS = [
   {
     question: "What does Iris actually do?",
     answer:
-      "Iris helps people review, direct, and improve design and product work. It starts by understanding the goal or by reviewing what already exists before it suggests bigger changes."
+      "Iris helps you review work, understand what matters, and decide the safest next step before bigger changes."
   },
   {
     question: "Does Iris change files automatically?",
     answer:
-      "No. Iris should stay clear about whether it is reviewing, proposing, or implementing. Changes and comment publishing should stay explicit."
+      "No. Iris should stay clear about whether it is reviewing, proposing, or implementing. Changes stay explicit."
   },
   {
     question: "Where can I use Iris right now?",
     answer:
-      "The current public-beta story starts with Cursor, Codex, ChatGPT, and Claude, with Figma available as a secondary surface."
+      "Cursor, Codex, ChatGPT, and Claude are in the main beta path. Figma is available as a secondary surface."
   },
   {
     question: "What does free include?",
@@ -86,33 +86,32 @@ export const FAQ_ITEMS = [
   {
     question: "What does memory mean here?",
     answer:
-      "Iris keeps session learning on so it can stay coherent inside the current task. Personal memory should only happen with explicit permission, and durable product learning should stay review-before-keep."
+      "Iris keeps session context during the current task. Longer-term memory should only happen with clear permission, and durable product learning stays review-before-keep."
   },
   {
     question: "How does privacy work?",
     answer:
-      "Iris should explain what it is using, what it inferred, and whether anything may be retained as learning. It should not silently scan or publish by default."
+      "Iris should explain what it is using and what it inferred. It should not silently scan or publish by default."
   },
   {
     question: "Is install really one-click yet?",
     answer:
-      "Not everywhere. Cursor is the closest thing to that experience today. The other supported hosts are still guided setups, even though the shared Iris runtime stays the same."
+      "Not everywhere. Cursor is the closest thing to that experience today. The other supported hosts are still guided setups."
   }
 ];
 
 export const TRUST_POINTS = [
   {
-    title: "No payment required to start",
-    copy: "The free path is enough to begin using Iris on the supported LLM hosts."
+    title: "Free to start",
+    copy: "The beta path is enough to begin using Iris on the supported hosts."
   },
   {
-    title: "Review before action",
+    title: "Review before change",
     copy: "Iris is built to review what already exists first and move into change only when you clearly ask it to."
   },
   {
-    title: "One shared judgment layer",
-    copy:
-      "Iris Core carries principles, taste, patterns, warnings, case studies, and operating rules across every supported surface."
+    title: "Support stays visible",
+    copy: "If the setup feels unclear or broken, the support path stays close instead of disappearing behind technical steps."
   }
 ];
 
