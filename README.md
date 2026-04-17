@@ -17,6 +17,7 @@ Current truth:
 - GitHub Pages hosts the public information site
 - the live install/runtime layer still terminates on the backend origin until an external proxy layer exists
 - user-facing copy should prefer `Iris connection URL` over backend/vendor wording
+- full masking is prepared in this repo through the Cloudflare Worker files in `worker/` and the guide in `docs/full-masking-cloudflare.md`
 
 ## Commands
 
@@ -25,4 +26,6 @@ npm install
 npm run dev
 npm run build
 npm run preview
+npm run proxy:dev
+npm run proxy:deploy
 ```

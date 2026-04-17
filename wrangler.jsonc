@@ -1,0 +1,15 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "irisfor-design-edge",
+  "main": "worker/index.js",
+  "compatibility_date": "2026-04-17",
+  "routes": [
+    {
+      "pattern": "www.irisfor.design/*",
+      "zone_name": "irisfor.design"
+    }
+  ],
+  "vars": {
+    "SUPABASE_ORIGIN": "https://rfgulhwmpedzafgrasar.supabase.co"
+  }
+}

@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "proxy:dev": "wrangler dev",
+    "proxy:deploy": "wrangler deploy"
   },
   "devDependencies": {
-    "vite": "^8.0.3"
+    "vite": "^8.0.3",
+    "wrangler": "^4.83.0"
   }
 }
