@@ -1,0 +1,89 @@
+<svg width="1280" height="980" viewBox="0 0 1280 980" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="90" y1="60" x2="1160" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EEF3FB"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F6F8FC"/>
+    </linearGradient>
+    <linearGradient id="crownBase" x1="152" y1="118" x2="330" y2="422" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7DBDFF"/>
+      <stop offset="0.48" stop-color="#2E84FF"/>
+      <stop offset="1" stop-color="#132A67"/>
+    </linearGradient>
+    <linearGradient id="crownShadow" x1="172" y1="172" x2="274" y2="348" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#112653" stop-opacity="0"/>
+      <stop offset="1" stop-color="#112653" stop-opacity="0.46"/>
+    </linearGradient>
+    <linearGradient id="ringWarmCool" x1="128" y1="122" x2="384" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9D3FF"/>
+      <stop offset="0.52" stop-color="#2E84FF"/>
+      <stop offset="1" stop-color="#112A67"/>
+    </linearGradient>
+    <linearGradient id="ringSoft" x1="122" y1="390" x2="392" y2="122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDEBFF"/>
+      <stop offset="1" stop-color="#7EB6FF"/>
+    </linearGradient>
+    <linearGradient id="eyeFill" x1="176" y1="210" x2="336" y2="302" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F9FF"/>
+      <stop offset="1" stop-color="#C7DEFF"/>
+    </linearGradient>
+    <g id="crown-v2">
+      <path d="M134 354L176 118L236 220L256 106L276 220L336 118L378 354L256 432L134 354Z" fill="url(#crownBase)"/>
+      <path d="M176 118L236 220L134 354L192 332L228 236L176 118Z" fill="url(#crownShadow)"/>
+      <path d="M336 118L276 220L378 354L320 332L284 236L336 118Z" fill="url(#crownShadow)"/>
+      <path d="M228 236L256 174L284 236L256 360L228 236Z" fill="#EAF3FF" fill-opacity="0.88"/>
+    </g>
+    <g id="lens-v2">
+      <path d="M256 92C346.575 92 420 165.425 420 256C420 346.575 346.575 420 256 420C165.425 420 92 346.575 92 256C92 165.425 165.425 92 256 92Z" fill="url(#ringSoft)"/>
+      <path d="M256 126C327.797 126 386 184.203 386 256C386 327.797 327.797 386 256 386C184.203 386 126 327.797 126 256C126 184.203 184.203 126 256 126Z" fill="#F7FBFF"/>
+      <path d="M132 256C132 187.516 187.516 132 256 132C310.14 132 356.176 166.684 373.06 215.02L314 215C300 179 261 152 222 160C183 168 151 202 151 256L132 256Z" fill="url(#ringWarmCool)"/>
+      <path d="M380 256C380 324.484 324.484 380 256 380C201.86 380 155.824 345.316 138.94 296.98L198 297C212 333 251 360 290 352C329 344 361 310 361 256H380Z" fill="url(#ringWarmCool)"/>
+      <path d="M256 132C324.484 132 380 187.516 380 256H361C361 202 329 168 290 160C251 152 212 179 198 215L138.94 215.02C155.824 166.684 201.86 132 256 132Z" fill="#9FC7FF"/>
+      <path d="M256 380C187.516 380 132 324.484 132 256L151 256C151 310 183 344 222 352C261 360 300 333 314 297L373.06 296.98C356.176 345.316 310.14 380 256 380Z" fill="#1B4FAE"/>
+      <g opacity="0.48" stroke="#3E577D" stroke-width="6" stroke-linecap="round">
+        <path d="M166 178V238"/><path d="M182 168V234"/><path d="M198 160V230"/><path d="M214 154V226"/>
+        <path d="M298 286V356"/><path d="M314 282V350"/><path d="M330 274V344"/><path d="M346 264V338"/>
+        <path d="M166 274V338"/><path d="M182 280V344"/><path d="M198 286V350"/><path d="M214 292V356"/>
+        <path d="M298 154V226"/><path d="M314 160V230"/><path d="M330 168V234"/><path d="M346 178V238"/>
+      </g>
+      <path d="M176 256C202.667 214.667 229.333 194 256 194C282.667 194 309.333 214.667 336 256C309.333 297.333 282.667 318 256 318C229.333 318 202.667 297.333 176 256Z" fill="url(#eyeFill)"/>
+      <path d="M188 256C210 223.333 232.667 207 256 207C279.333 207 302 223.333 324 256C302 288.667 279.333 305 256 305C232.667 305 210 288.667 188 256Z" fill="#584C4A"/>
+      <circle cx="256" cy="256" r="28" fill="#E5F0FF"/>
+      <circle cx="256" cy="256" r="18" fill="#19366D"/>
+    </g>
+  </defs>
+
+  <rect width="1280" height="980" rx="40" fill="url(#bg)"/>
+  <text x="72" y="100" fill="#0F172A" font-family="Syne, Arial, sans-serif" font-size="48" font-weight="700">Reference pull-back round</text>
+  <text x="72" y="142" fill="#55657F" font-family="Manrope, Arial, sans-serif" font-size="24">Crown brought back toward simple silhouette. Lens brought back toward segmented detail and crafted structure.</text>
+
+  <rect x="56" y="200" width="540" height="620" rx="30" fill="url(#card)" stroke="#D9E4F2"/>
+  <rect x="684" y="200" width="540" height="620" rx="30" fill="url(#card)" stroke="#D9E4F2"/>
+
+  <g transform="translate(120 236) scale(0.68)"><use href="#crown-v2"/></g>
+  <g transform="translate(748 236) scale(0.68)"><use href="#lens-v2"/></g>
+
+  <text x="88" y="676" fill="#111827" font-family="Syne, Arial, sans-serif" font-size="30" font-weight="700">Crown Node v2</text>
+  <text x="88" y="712" fill="#596984" font-family="Manrope, Arial, sans-serif" font-size="19">
+    <tspan x="88" dy="0">Closer to the reference silhouette.</tspan>
+    <tspan x="88" dy="26">Cleaner and more immediate than the first pass.</tspan>
+  </text>
+  <g transform="translate(88 754) scale(0.09375)"><use href="#crown-v2"/></g>
+  <g transform="translate(136 766) scale(0.0625)"><use href="#crown-v2"/></g>
+  <g transform="translate(176 776) scale(0.0390625)"><use href="#crown-v2"/></g>
+
+  <text x="716" y="676" fill="#111827" font-family="Syne, Arial, sans-serif" font-size="30" font-weight="700">Lens Core v2</text>
+  <text x="716" y="712" fill="#596984" font-family="Manrope, Arial, sans-serif" font-size="19">
+    <tspan x="716" dy="0">Brings back the segmented ring logic</tspan>
+    <tspan x="716" dy="26">and inner detail without losing the core read.</tspan>
+  </text>
+  <g transform="translate(716 754) scale(0.09375)"><use href="#lens-v2"/></g>
+  <g transform="translate(764 766) scale(0.0625)"><use href="#lens-v2"/></g>
+  <g transform="translate(804 776) scale(0.0390625)"><use href="#lens-v2"/></g>
+
+  <rect x="56" y="856" width="1168" height="92" rx="24" fill="#FFFFFF" stroke="#D9E4F2"/>
+  <text x="88" y="913" fill="#54647E" font-family="Manrope, Arial, sans-serif" font-size="22">My read: this is the right correction. The crown now feels simpler and more recognizable. The lens now has more authored detail and a stronger “crafted intelligence” quality.</text>
+</svg>

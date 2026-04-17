@@ -1,0 +1,29 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgProfile" x1="92" y1="70" x2="426" y2="444" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7FBFF"/>
+      <stop offset="1" stop-color="#E2EEFF"/>
+    </linearGradient>
+    <linearGradient id="shapeProfile" x1="152" y1="112" x2="346" y2="398" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9BC0FF"/>
+      <stop offset="0.5" stop-color="#367EFF"/>
+      <stop offset="1" stop-color="#10397E"/>
+    </linearGradient>
+    <filter id="shadowProfile" x="78" y="60" width="356" height="396" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#153C82" flood-opacity="0.16"/>
+    </filter>
+    <mask id="faceCut">
+      <rect width="512" height="512" fill="white"/>
+      <path d="M280 134C323.078 143.667 352 181.354 352 226C352 256.245 338.727 284.378 315.778 303.517C301.581 315.357 292 333.093 292 351V376H232V345C232 320.289 244.525 299.357 265.495 283.535C280.907 271.911 290 253.435 290 233C290 205.307 273.307 181 245 181H234V134H280Z" fill="black"/>
+    </mask>
+  </defs>
+
+  <rect width="512" height="512" rx="132" fill="url(#bgProfile)"/>
+  <g filter="url(#shadowProfile)">
+    <path d="M256 110C338.29 110 405 176.71 405 259C405 341.29 338.29 408 256 408C173.71 408 107 341.29 107 259C107 176.71 173.71 110 256 110Z" fill="url(#shapeProfile)" mask="url(#faceCut)"/>
+    <path d="M228 136C314.156 136 384 205.844 384 292C384 317.183 378.04 340.975 367.453 362.046" stroke="#D4E5FF" stroke-width="12" stroke-linecap="round"/>
+    <path d="M164 386C130.38 358.146 109 317.088 109 271.037C109 221.701 133.551 178.102 171.12 151.678" stroke="#7AA8FF" stroke-width="12" stroke-linecap="round"/>
+    <circle cx="304" cy="242" r="28" fill="#EAF4FF"/>
+    <path d="M182 348C214.536 315.464 267.296 315.464 299.832 348" stroke="#EAF4FF" stroke-width="18" stroke-linecap="round"/>
+  </g>
+</svg>

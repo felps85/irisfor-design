@@ -1,0 +1,30 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F4EE"/>
+  <rect x="72" y="72" width="1456" height="756" rx="36" fill="#FFFFFF"/>
+  <rect x="72.5" y="72.5" width="1455" height="755" rx="35.5" stroke="#0F172A" stroke-opacity="0.08"/>
+  <rect x="112" y="112" width="360" height="676" rx="28" fill="#FBFAF7"/>
+  <rect x="516" y="112" width="972" height="676" rx="28" fill="#F8FAFC"/>
+  <circle cx="170" cy="174" r="24" fill="#0F172A"/>
+  <path d="M136 332H204V228L136 332Z" fill="#0F172A"/>
+  <text x="236" y="184" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="700">Iris</text>
+  <text x="112" y="244" fill="#64748B" font-family="IBM Plex Mono, Arial, sans-serif" font-size="18" letter-spacing="0.12em">CURRENT REVIEW TARGET</text>
+  <rect x="112" y="274" width="360" height="116" rx="24" fill="#FFFFFF"/>
+  <text x="140" y="320" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Hero frame</text>
+  <text x="140" y="356" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="22">Landing page / home</text>
+  <text x="112" y="448" fill="#64748B" font-family="IBM Plex Mono, Arial, sans-serif" font-size="18" letter-spacing="0.12em">REVIEW MODE</text>
+  <rect x="112" y="478" width="360" height="92" rx="24" fill="#EEF3FF"/>
+  <text x="140" y="530" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Comment-ready critique</text>
+  <text x="112" y="628" fill="#64748B" font-family="IBM Plex Mono, Arial, sans-serif" font-size="18" letter-spacing="0.12em">TRUST</text>
+  <text x="112" y="672" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22">Nothing is posted automatically.</text>
+  <text x="112" y="706" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22">Review and publishing stay separate.</text>
+  <rect x="564" y="160" width="876" height="220" rx="30" fill="#FFFFFF"/>
+  <text x="612" y="220" fill="#64748B" font-family="IBM Plex Mono, Arial, sans-serif" font-size="18" letter-spacing="0.12em">FINDING 01</text>
+  <text x="612" y="282" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="36" font-weight="700">The hero promise is strong, but proof competes too early.</text>
+  <text x="612" y="334" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="26">Keep the first screen focused on what Iris does before the proof row and host list.</text>
+  <rect x="564" y="410" width="876" height="150" rx="30" fill="#FFFFFF"/>
+  <text x="612" y="468" fill="#64748B" font-family="IBM Plex Mono, Arial, sans-serif" font-size="18" letter-spacing="0.12em">FINDING 02</text>
+  <text x="612" y="530" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">Treat the product promise as the main visual anchor.</text>
+  <rect x="564" y="590" width="876" height="150" rx="30" fill="#EEF3FF"/>
+  <text x="612" y="648" fill="#64748B" font-family="IBM Plex Mono, Arial, sans-serif" font-size="18" letter-spacing="0.12em">OUTCOME</text>
+  <text x="612" y="710" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">Review-first critique that is ready to turn into comments.</text>
+</svg>

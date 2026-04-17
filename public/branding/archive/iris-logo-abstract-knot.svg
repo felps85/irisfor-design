@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="knotBlue" x1="112" y1="138" x2="280" y2="366" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#63D8FF"/>
+      <stop offset="0.5" stop-color="#2E83FF"/>
+      <stop offset="1" stop-color="#6A53FF"/>
+    </linearGradient>
+    <linearGradient id="knotWarm" x1="258" y1="132" x2="404" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8054FF"/>
+      <stop offset="0.5" stop-color="#FF4E97"/>
+      <stop offset="1" stop-color="#FFB357"/>
+    </linearGradient>
+    <linearGradient id="knotCool" x1="178" y1="190" x2="364" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#30D4C9"/>
+      <stop offset="0.52" stop-color="#2E8BFF"/>
+      <stop offset="1" stop-color="#7854FF"/>
+    </linearGradient>
+    <filter id="knotShadow" x="88" y="98" width="336" height="336" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#173B7F" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <g filter="url(#knotShadow)">
+    <path d="M166 158C207.333 130 247.333 116 286 116C344.542 116 392 163.458 392 222C392 260.666 376.667 299.333 346 338L310 304C330 280.667 340 254.667 340 226C340 189.549 310.451 160 274 160C250 160 223.333 172 194 196L166 158Z" fill="url(#knotWarm)"/>
+    <path d="M148 312C123.333 276.667 111 240.333 111 203C111 144.458 158.458 97 217 97C254.333 97 290.667 113 326 145L292 179C267.333 158.333 242.333 148 217 148C180.549 148 151 177.549 151 214C151 238 162.333 264.333 185 293L148 312Z" fill="url(#knotBlue)"/>
+    <path d="M348 344C314 372 275.667 386 233 386C174.458 386 127 338.542 127 280C127 239.333 144.333 202 179 168L215 203C191.667 226.333 180 251.333 180 278C180 314.451 209.549 344 246 344C271.333 344 296 333.333 320 312L348 344Z" fill="url(#knotCool)"/>
+    <path d="M228 238C238.667 225.333 252.333 219 269 219C291 219 309.333 230 324 252C313.333 281.333 295.333 296 270 296C248.667 296 231.333 286 218 266L228 238Z" fill="#F3F9FF" fill-opacity="0.7"/>
+  </g>
+</svg>

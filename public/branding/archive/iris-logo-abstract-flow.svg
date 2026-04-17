@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flowA" x1="112" y1="132" x2="286" y2="378" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#54D7FF"/>
+      <stop offset="0.48" stop-color="#2D7FFF"/>
+      <stop offset="1" stop-color="#6D54FF"/>
+    </linearGradient>
+    <linearGradient id="flowB" x1="238" y1="124" x2="418" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7B53FF"/>
+      <stop offset="0.55" stop-color="#FF4F97"/>
+      <stop offset="1" stop-color="#FF9B5D"/>
+    </linearGradient>
+    <linearGradient id="flowC" x1="180" y1="186" x2="348" y2="382" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#41D2D0"/>
+      <stop offset="0.5" stop-color="#2F89FF"/>
+      <stop offset="1" stop-color="#7B52FF"/>
+    </linearGradient>
+    <filter id="flowShadow" x="74" y="94" width="364" height="328" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="20" flood-color="#173B7F" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <g filter="url(#flowShadow)">
+    <path d="M134 286C134 213.755 179.229 160 240 160C282.585 160 317.154 184.347 338 228" stroke="url(#flowA)" stroke-width="56" stroke-linecap="round"/>
+    <path d="M380 234C380 308.118 332.451 362 270 362C232.772 362 199.685 342.454 178 308" stroke="url(#flowB)" stroke-width="56" stroke-linecap="round"/>
+    <path d="M192 214C214.667 190.667 242.667 179 276 179C321.333 179 354.667 203.667 376 253" stroke="url(#flowB)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M320 340C302 350 281 355 257 355C216.333 355 183.333 332.333 158 287" stroke="url(#flowC)" stroke-width="34" stroke-linecap="round"/>
+  </g>
+</svg>

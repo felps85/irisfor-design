@@ -1,0 +1,23 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="axisLeft" x1="132" y1="142" x2="266" y2="334" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2CE0FF"/>
+      <stop offset="0.42" stop-color="#2D8AFF"/>
+      <stop offset="1" stop-color="#6A58FF"/>
+    </linearGradient>
+    <linearGradient id="axisMid" x1="200" y1="130" x2="346" y2="298" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF59A7"/>
+      <stop offset="0.48" stop-color="#7757FF"/>
+      <stop offset="1" stop-color="#2B9FFF"/>
+    </linearGradient>
+    <linearGradient id="axisRight" x1="274" y1="174" x2="398" y2="376" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7757FF"/>
+      <stop offset="0.46" stop-color="#FF5CA5"/>
+      <stop offset="1" stop-color="#FF9D58"/>
+    </linearGradient>
+  </defs>
+  <polygon points="126,248 206,130 274,168 194,286" fill="url(#axisLeft)"/>
+  <polygon points="194,286 274,168 340,206 260,324" fill="url(#axisMid)"/>
+  <polygon points="260,324 340,206 398,242 318,380" fill="url(#axisRight)"/>
+  <polygon points="214,296 260,230 306,258 260,324" fill="#F7F9FF" fill-opacity="0.92"/>
+</svg>

@@ -1,0 +1,47 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="coverGlow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1330 120) rotate(90) scale(260 340)">
+      <stop stop-color="#DDE6F8"/>
+      <stop offset="1" stop-color="#DDE6F8" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1600" height="900" fill="#F7F4EE"/>
+  <circle cx="1330" cy="120" r="260" fill="url(#coverGlow)"/>
+  <circle cx="232" cy="182" r="52" fill="#0F172A"/>
+  <path d="M148 500H296V256L148 500Z" fill="#0F172A"/>
+  <text x="120" y="610" fill="#64748B" font-family="IBM Plex Mono, Arial, sans-serif" font-size="26" letter-spacing="0.18em">REVIEW FIRST</text>
+  <text x="120" y="700" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="76" font-weight="700">Iris for Figma</text>
+  <text x="120" y="766" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="30">Comment-ready design critique for the current selection.</text>
+  <text x="120" y="808" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="30">Review stays separate from publishing, so nothing is posted silently.</text>
+  <g>
+    <rect x="120" y="99" width="184" height="44" rx="22" fill="#FFFFFF" fill-opacity="0.88"/>
+    <text x="156" y="128" fill="#0F172A" font-family="IBM Plex Mono, Arial, sans-serif" font-size="18" letter-spacing="0.12em">IRIS BETA</text>
+  </g>
+  <g>
+    <rect x="120" y="834" width="132" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.88"/>
+    <text x="148" y="860" fill="#0F172A" font-family="IBM Plex Mono, Arial, sans-serif" font-size="16" letter-spacing="0.12em">REVIEW</text>
+    <rect x="266" y="834" width="120" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.88"/>
+    <text x="293" y="860" fill="#0F172A" font-family="IBM Plex Mono, Arial, sans-serif" font-size="16" letter-spacing="0.12em">DRAFT</text>
+    <rect x="400" y="834" width="136" height="40" rx="20" fill="#FFFFFF" fill-opacity="0.88"/>
+    <text x="427" y="860" fill="#0F172A" font-family="IBM Plex Mono, Arial, sans-serif" font-size="16" letter-spacing="0.12em">PUBLISH</text>
+  </g>
+  <g>
+    <rect x="926" y="106" width="558" height="688" rx="42" fill="#FFFFFF" fill-opacity="0.9"/>
+    <rect x="926.5" y="106.5" width="557" height="687" rx="41.5" stroke="#0F172A" stroke-opacity="0.08"/>
+    <rect x="962" y="142" width="488" height="94" rx="26" fill="#F2EFE8"/>
+    <text x="994" y="182" fill="#64748B" font-family="IBM Plex Mono, Arial, sans-serif" font-size="18" letter-spacing="0.08em">CURRENT SELECTION</text>
+    <text x="994" y="219" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Landing page hero frame</text>
+    <rect x="962" y="270" width="488" height="120" rx="28" fill="#FBFAF7"/>
+    <text x="994" y="314" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Hierarchy</text>
+    <text x="994" y="352" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22">The headline lands clearly, but the proof row competes too early.</text>
+    <rect x="962" y="410" width="488" height="120" rx="28" fill="#FBFAF7"/>
+    <text x="994" y="454" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Clarity</text>
+    <text x="994" y="492" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22">Keep the product promise visible before the tool surfaces and metrics.</text>
+    <rect x="962" y="550" width="488" height="168" rx="28" fill="#EFF3FB"/>
+    <text x="994" y="594" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Comment draft</text>
+    <text x="994" y="636" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22">Move this proof module below the hero summary so the promise</text>
+    <text x="994" y="668" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22">lands first. The current order makes the page feel more like</text>
+    <text x="994" y="700" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22">a dashboard than an invitation.</text>
+    <text x="994" y="754" fill="#64748B" font-family="IBM Plex Mono, Arial, sans-serif" font-size="18" letter-spacing="0.08em">NOTHING IS POSTED UNTIL YOU CONFIRM</text>
+  </g>
+</svg>

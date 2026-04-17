@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bloomBlue" x1="126" y1="124" x2="282" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#64D8FF"/>
+      <stop offset="0.48" stop-color="#2D82FF"/>
+      <stop offset="1" stop-color="#6B53FF"/>
+    </linearGradient>
+    <linearGradient id="bloomPink" x1="238" y1="132" x2="392" y2="306" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6C53FF"/>
+      <stop offset="0.5" stop-color="#F95099"/>
+      <stop offset="1" stop-color="#FFAA58"/>
+    </linearGradient>
+    <linearGradient id="bloomTeal" x1="180" y1="214" x2="348" y2="392" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D5CB"/>
+      <stop offset="0.42" stop-color="#2D8FFF"/>
+      <stop offset="1" stop-color="#7053FF"/>
+    </linearGradient>
+    <filter id="bloomShadow" x="92" y="100" width="328" height="328" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#173B7F" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <g filter="url(#bloomShadow)">
+    <path d="M246 120C304.708 120 352 167.292 352 226C352 250.615 343.688 273.289 329.721 291.346L246 226V120Z" fill="url(#bloomPink)"/>
+    <path d="M160 194C160 145.399 199.399 106 248 106C275.235 106 299.581 118.372 315.749 137.814L248 238L160 194Z" fill="url(#bloomBlue)"/>
+    <path d="M142 286C142 231.324 186.324 187 241 187C279.218 187 312.375 208.644 329.008 240.334L241 286H142Z" fill="url(#bloomTeal)"/>
+    <path d="M256 392C200.772 392 156 347.228 156 292C156 268.846 163.866 247.529 177.076 230.572L256 292V392Z" fill="url(#bloomBlue)"/>
+    <path d="M356 312C356 359.496 317.496 398 270 398C243.395 398 219.611 385.91 203.842 366.926L270 278L356 312Z" fill="url(#bloomPink)"/>
+    <circle cx="256" cy="256" r="46" fill="#F5F9FF"/>
+  </g>
+</svg>

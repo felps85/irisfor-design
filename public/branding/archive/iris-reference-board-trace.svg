@@ -1,0 +1,52 @@
+<svg width="1080" height="1440" viewBox="0 0 1080 1440" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1080" height="1440" fill="#F5F7FB"/>
+  <text x="84" y="94" fill="#101522" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">Trace</text>
+  <text x="84" y="134" fill="#516079" font-family="Inter, Arial, sans-serif" font-size="22">Closest structural read of each reference family</text>
+
+  <g transform="translate(84 190)">
+    <g>
+      <rect width="392" height="340" rx="28" fill="white"/>
+      <text x="28" y="42" fill="#6A768E" font-family="IBM Plex Mono, monospace" font-size="16">Outgood / faceted arch</text>
+      <path d="M102 214L198 128L236 164L140 252Z" fill="#D7DDEA"/>
+      <path d="M198 128L294 214L256 252L198 194L140 252L102 214L160 156Z" fill="#BFC7D8"/>
+      <path d="M256 252L352 166L314 128L218 214Z" fill="#D7DDEA"/>
+    </g>
+
+    <g transform="translate(464 0)">
+      <rect width="392" height="340" rx="28" fill="white"/>
+      <text x="28" y="42" fill="#6A768E" font-family="IBM Plex Mono, monospace" font-size="16">Monograms / negative space</text>
+      <path d="M126 110H282V150H166V186H250V226H166V266H282V306H126V110Z" fill="#CFD5E2"/>
+      <path d="M222 110H262V306H222V110Z" fill="#B6BFD1"/>
+    </g>
+
+    <g transform="translate(0 388)">
+      <rect width="392" height="340" rx="28" fill="white"/>
+      <text x="28" y="42" fill="#6A768E" font-family="IBM Plex Mono, monospace" font-size="16">Organic ribbons / looped mass</text>
+      <path d="M200 78C268 114 290 186 262 238C234 288 166 326 136 268C106 212 136 132 200 78Z" fill="#D5DCE9"/>
+      <path d="M238 154C312 164 348 228 320 292C294 354 224 358 196 324C240 274 252 212 238 154Z" fill="#BEC7D7"/>
+      <path d="M178 248C214 268 232 306 226 356C184 340 156 304 146 266Z" fill="#AEB8CB"/>
+    </g>
+
+    <g transform="translate(464 388)">
+      <rect width="392" height="340" rx="28" fill="white"/>
+      <text x="28" y="42" fill="#6A768E" font-family="IBM Plex Mono, monospace" font-size="16">Broad stock set / folded shard</text>
+      <path d="M124 208L220 114L254 148L190 212L254 276L220 310Z" fill="#D3DAE8"/>
+      <path d="M190 212L284 118L318 152L254 216L318 280L284 314Z" fill="#B7C0D2"/>
+    </g>
+
+    <g transform="translate(0 776)">
+      <rect width="392" height="340" rx="28" fill="white"/>
+      <text x="28" y="42" fill="#6A768E" font-family="IBM Plex Mono, monospace" font-size="16">Geometric neon / facet shield</text>
+      <path d="M198 94L306 152V286L198 344L90 286V152L198 94Z" fill="#D2D9E7"/>
+      <path d="M198 126L270 164V260L198 308L126 260V164L198 126Z" fill="#F5F7FB"/>
+      <path d="M198 126L270 164L198 308V234L126 260V164L198 126Z" fill="#B8C1D3"/>
+    </g>
+
+    <g transform="translate(464 776)">
+      <rect width="392" height="340" rx="28" fill="white"/>
+      <text x="28" y="42" fill="#6A768E" font-family="IBM Plex Mono, monospace" font-size="16">Soft volume / rounded triangle</text>
+      <path d="M198 92C278 92 334 150 334 218C334 286 282 336 208 336C132 336 78 284 78 220C78 154 128 92 198 92Z" fill="#D6DCE9"/>
+      <path d="M198 122C252 122 294 160 294 212C294 264 254 296 212 296C172 296 146 272 146 236C146 178 180 150 198 122Z" fill="#B9C3D4"/>
+    </g>
+  </g>
+</svg>

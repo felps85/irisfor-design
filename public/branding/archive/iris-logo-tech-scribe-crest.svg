@@ -1,0 +1,22 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="scribeFill" x1="124" y1="98" x2="372" y2="424" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8CC2FF"/>
+      <stop offset="0.5" stop-color="#337DFF"/>
+      <stop offset="1" stop-color="#132A62"/>
+    </linearGradient>
+    <mask id="scribeCut">
+      <rect width="512" height="512" fill="white"/>
+      <circle cx="256" cy="324" r="24" fill="black"/>
+      <rect x="246" y="332" width="20" height="86" rx="10" fill="black"/>
+    </mask>
+  </defs>
+
+  <path
+    mask="url(#scribeCut)"
+    d="M120 190L176 128L218 182L256 94L294 182L336 128L392 190L344 262L314 292L286 426H226L198 292L168 262L120 190Z"
+    fill="url(#scribeFill)"
+  />
+  <path d="M168 262C214 242 298 242 344 262" stroke="#E6F1FF" stroke-width="18" stroke-linecap="round"/>
+  <path d="M204 286L256 238L308 286" stroke="#102656" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" opacity="0.45"/>
+</svg>

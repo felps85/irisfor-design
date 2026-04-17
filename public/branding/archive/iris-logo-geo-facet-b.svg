@@ -1,0 +1,29 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="facetB1" x1="124" y1="172" x2="302" y2="120" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2AD7FF"/>
+      <stop offset="0.5" stop-color="#5D61FF"/>
+      <stop offset="1" stop-color="#FF57A0"/>
+    </linearGradient>
+    <linearGradient id="facetB2" x1="250" y1="108" x2="386" y2="256" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5FA7"/>
+      <stop offset="0.5" stop-color="#7A57FF"/>
+      <stop offset="1" stop-color="#2D90FF"/>
+    </linearGradient>
+    <linearGradient id="facetB3" x1="382" y1="218" x2="250" y2="398" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFA959"/>
+      <stop offset="0.52" stop-color="#FF5FA7"/>
+      <stop offset="1" stop-color="#6460FF"/>
+    </linearGradient>
+    <linearGradient id="facetB4" x1="132" y1="214" x2="236" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2B9BFF"/>
+      <stop offset="0.48" stop-color="#2FE0C6"/>
+      <stop offset="1" stop-color="#4B74FF"/>
+    </linearGradient>
+  </defs>
+  <polygon points="124,176 254,100 314,210 196,210" fill="url(#facetB1)"/>
+  <polygon points="254,100 388,176 312,286 314,210" fill="url(#facetB2)"/>
+  <polygon points="388,176 384,324 254,412 312,286" fill="url(#facetB3)"/>
+  <polygon points="124,176 196,210 196,322 254,412 128,334" fill="url(#facetB4)"/>
+  <polygon points="214,230 286,230 254,354 214,302" fill="#F8FAFF"/>
+</svg>

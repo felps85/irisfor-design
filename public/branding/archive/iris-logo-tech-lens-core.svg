@@ -1,0 +1,20 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="lensStroke" x1="132" y1="128" x2="380" y2="382" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8AC1FF"/>
+      <stop offset="0.5" stop-color="#2F85FF"/>
+      <stop offset="1" stop-color="#132C69"/>
+    </linearGradient>
+    <linearGradient id="lensCenter" x1="210" y1="214" x2="312" y2="314" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EBF4FF"/>
+      <stop offset="1" stop-color="#C5DEFF"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M152 178C183 139 224 118 274 118C327 118 369 145 389 194" stroke="url(#lensStroke)" stroke-width="56" stroke-linecap="round"/>
+  <path d="M360 334C329 373 288 394 238 394C185 394 143 367 123 318" stroke="url(#lensStroke)" stroke-width="56" stroke-linecap="round"/>
+  <path d="M256 194L330 256L256 318L182 256L256 194Z" fill="url(#lensCenter)"/>
+  <circle cx="256" cy="256" r="34" fill="#18366F"/>
+  <path d="M150 270C170 326 212 360 278 360" stroke="#9CC6FF" stroke-width="16" stroke-linecap="round"/>
+  <path d="M362 242C342 186 300 152 234 152" stroke="#123B8C" stroke-width="16" stroke-linecap="round"/>
+</svg>

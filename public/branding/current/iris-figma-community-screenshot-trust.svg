@@ -1,0 +1,26 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="900" fill="#F7F4EE"/>
+  <rect x="96" y="96" width="1408" height="708" rx="40" fill="#FFFFFF"/>
+  <rect x="96.5" y="96.5" width="1407" height="707" rx="39.5" stroke="#0F172A" stroke-opacity="0.08"/>
+  <circle cx="182" cy="176" r="32" fill="#0F172A"/>
+  <path d="M146 296H218V188L146 296Z" fill="#0F172A"/>
+  <text x="250" y="188" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="700">Trust is visible in the workflow</text>
+  <text x="250" y="230" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="24">Iris explains what it can review, what it cannot do, and what still requires your approval.</text>
+  <rect x="144" y="294" width="402" height="420" rx="30" fill="#FBFAF7"/>
+  <text x="184" y="356" fill="#64748B" font-family="IBM Plex Mono, Arial, sans-serif" font-size="18" letter-spacing="0.12em">ACCESS</text>
+  <text x="184" y="418" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="700">Signed in to Iris</text>
+  <text x="184" y="462" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22">Free beta plan</text>
+  <text x="184" y="498" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22">10 interactions every 7 days</text>
+  <rect x="184" y="554" width="322" height="76" rx="24" fill="#EEF3FF"/>
+  <text x="220" y="602" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Review available</text>
+  <rect x="608" y="294" width="408" height="420" rx="30" fill="#F8FAFC"/>
+  <text x="648" y="356" fill="#64748B" font-family="IBM Plex Mono, Arial, sans-serif" font-size="18" letter-spacing="0.12em">PERMISSIONS</text>
+  <text x="648" y="420" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">What Iris does not do</text>
+  <text x="648" y="474" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22">No silent publishing</text>
+  <text x="648" y="510" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22">No account-wide file scanning</text>
+  <text x="648" y="546" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22">No hidden live-site changes</text>
+  <rect x="1078" y="294" width="282" height="420" rx="30" fill="#FBFAF7"/>
+  <text x="1118" y="356" fill="#64748B" font-family="IBM Plex Mono, Arial, sans-serif" font-size="18" letter-spacing="0.12em">NEXT STEP</text>
+  <text x="1118" y="418" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Review first</text>
+  <text x="1118" y="470" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="22">Choose a frame, page, or component and run a review before deciding whether to publish comments.</text>
+</svg>

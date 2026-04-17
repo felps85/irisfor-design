@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="pillarFill" x1="192" y1="74" x2="320" y2="438" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8CC4FF"/>
+      <stop offset="0.48" stop-color="#2D86FF"/>
+      <stop offset="1" stop-color="#112A67"/>
+    </linearGradient>
+    <mask id="pillarCut">
+      <rect width="512" height="512" fill="white"/>
+      <circle cx="256" cy="132" r="34" fill="black"/>
+      <rect x="238" y="180" width="36" height="190" rx="18" fill="black"/>
+    </mask>
+  </defs>
+
+  <rect x="170" y="72" width="172" height="368" rx="86" fill="url(#pillarFill)" mask="url(#pillarCut)"/>
+  <path d="M202 118C219 102 238 94 256 94" stroke="#E8F3FF" stroke-width="12" stroke-linecap="round"/>
+  <path d="M310 392C292 410 274 418 256 418" stroke="#0F2A67" stroke-width="12" stroke-linecap="round" opacity="0.5"/>
+</svg>

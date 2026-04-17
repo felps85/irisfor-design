@@ -1,0 +1,23 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ribbonA1" x1="258" y1="52" x2="332" y2="198" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B5CFF"/>
+      <stop offset="0.46" stop-color="#FF5CA8"/>
+      <stop offset="1" stop-color="#FF8D61"/>
+    </linearGradient>
+    <linearGradient id="ribbonA2" x1="258" y1="182" x2="394" y2="338" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8C61"/>
+      <stop offset="0.54" stop-color="#FFB43D"/>
+      <stop offset="1" stop-color="#D7C700"/>
+    </linearGradient>
+    <linearGradient id="ribbonA3" x1="164" y1="232" x2="266" y2="406" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9DD300"/>
+      <stop offset="0.52" stop-color="#33D7B9"/>
+      <stop offset="1" stop-color="#33A5FF"/>
+    </linearGradient>
+  </defs>
+  <path d="M277 46C315 68 333 105 327 148C322 181 300 203 278 223C261 206 252 183 252 159C252 110 263 72 277 46Z" fill="url(#ribbonA1)"/>
+  <path d="M271 219C319 188 379 194 405 236C430 276 414 328 372 357C334 383 294 391 255 418C266 379 266 336 246 301C230 270 233 241 271 219Z" fill="url(#ribbonA2)"/>
+  <path d="M244 214C209 229 181 258 169 297C155 342 165 391 206 429C238 398 258 358 264 316C270 273 261 239 244 214Z" fill="url(#ribbonA3)"/>
+  <path d="M259 320C286 306 320 307 346 322C372 338 384 365 379 393C344 395 315 410 293 432C278 447 266 466 258 488C229 461 226 390 259 320Z" fill="url(#ribbonA2)"/>
+</svg>

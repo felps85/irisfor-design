@@ -1,0 +1,32 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgOrbit" x1="96" y1="72" x2="426" y2="436" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F5FAFF"/>
+      <stop offset="1" stop-color="#E1EEFF"/>
+    </linearGradient>
+    <linearGradient id="ringOrbit" x1="116" y1="104" x2="396" y2="410" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#89B6FF"/>
+      <stop offset="0.52" stop-color="#347CFF"/>
+      <stop offset="1" stop-color="#143F8F"/>
+    </linearGradient>
+    <linearGradient id="personOrbit" x1="220" y1="168" x2="302" y2="332" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EAF4FF"/>
+      <stop offset="1" stop-color="#AFD0FF"/>
+    </linearGradient>
+    <filter id="shadowOrbit" x="56" y="48" width="400" height="416" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="20" flood-color="#0F2E68" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="132" fill="url(#bgOrbit)"/>
+  <g filter="url(#shadowOrbit)">
+    <circle cx="256" cy="256" r="154" fill="#F8FBFF"/>
+    <circle cx="256" cy="256" r="146" stroke="url(#ringOrbit)" stroke-width="22"/>
+    <path d="M148 256C148 196.353 196.353 148 256 148C315.647 148 364 196.353 364 256" stroke="#5E98FF" stroke-width="20" stroke-linecap="round"/>
+    <path d="M364 256C364 315.647 315.647 364 256 364C196.353 364 148 315.647 148 256" stroke="#1E63E5" stroke-width="20" stroke-linecap="round"/>
+    <circle cx="256" cy="212" r="34" fill="url(#personOrbit)"/>
+    <path d="M186 320C186 281.34 217.34 250 256 250C294.66 250 326 281.34 326 320V330H186V320Z" fill="url(#personOrbit)"/>
+    <path d="M120 256C120 181.442 181.442 120 256 120" stroke="#B4D1FF" stroke-width="12" stroke-linecap="round"/>
+    <path d="M392 256C392 330.558 330.558 392 256 392" stroke="#295FCF" stroke-width="12" stroke-linecap="round"/>
+  </g>
+</svg>

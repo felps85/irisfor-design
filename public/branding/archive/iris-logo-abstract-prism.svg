@@ -1,0 +1,32 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="prismLeft" x1="116" y1="144" x2="264" y2="356" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5ED6FF"/>
+      <stop offset="0.55" stop-color="#2F84FF"/>
+      <stop offset="1" stop-color="#6B4DFF"/>
+    </linearGradient>
+    <linearGradient id="prismRight" x1="252" y1="160" x2="406" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7A54FF"/>
+      <stop offset="0.5" stop-color="#FF4E95"/>
+      <stop offset="1" stop-color="#FF9E56"/>
+    </linearGradient>
+    <linearGradient id="prismCenter" x1="228" y1="176" x2="284" y2="342" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4FAFF"/>
+      <stop offset="1" stop-color="#D7E8FF"/>
+    </linearGradient>
+    <filter id="shadowPrism" x="86" y="112" width="340" height="300" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#173B7F" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowPrism)">
+    <path d="M106 256C150 182 200 145 256 145C281 145 305 152 328 167L280 210C271.333 205.333 263.333 203 256 203C220 203 184 224.667 148 268L106 256Z" fill="url(#prismLeft)"/>
+    <path d="M106 256L148 244C184 287.333 220 309 256 309C263.333 309 271.333 306.667 280 302L328 345C305 360 281 367 256 367C200 367 150 330 106 256Z" fill="url(#prismLeft)"/>
+    <path d="M406 256C362 182 312 145 256 145C231 145 207 152 184 167L232 210C240.667 205.333 248.667 203 256 203C292 203 328 224.667 364 268L406 256Z" fill="url(#prismRight)"/>
+    <path d="M406 256L364 244C328 287.333 292 309 256 309C248.667 309 240.667 306.667 232 302L184 345C207 360 231 367 256 367C312 367 362 330 406 256Z" fill="url(#prismRight)"/>
+    <path d="M256 173L304 216V311L256 349L208 311V216L256 173Z" fill="url(#prismCenter)"/>
+    <circle cx="256" cy="167" r="15" fill="url(#prismCenter)"/>
+    <path d="M234 248C240.667 241.333 248 238 256 238C264 238 271.333 241.333 278 248" stroke="#BED6FF" stroke-width="10" stroke-linecap="round"/>
+    <path d="M222 318C222 299.222 237.222 284 256 284C274.778 284 290 299.222 290 318V328H222V318Z" fill="#BED6FF"/>
+  </g>
+</svg>

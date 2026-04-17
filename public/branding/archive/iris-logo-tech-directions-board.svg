@@ -1,0 +1,142 @@
+<svg width="1600" height="1180" viewBox="0 0 1600 1180" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="boardBg" x1="110" y1="80" x2="1430" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EEF3FB"/>
+    </linearGradient>
+    <linearGradient id="cardBg" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F5F8FD"/>
+    </linearGradient>
+    <linearGradient id="crownFill" x1="128" y1="112" x2="360" y2="416" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#78B8FF"/>
+      <stop offset="0.52" stop-color="#2D83FF"/>
+      <stop offset="1" stop-color="#102A67"/>
+    </linearGradient>
+    <linearGradient id="crownFacet" x1="186" y1="174" x2="330" y2="388" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F214E" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0F214E" stop-opacity="0.45"/>
+    </linearGradient>
+    <linearGradient id="scribeFill" x1="124" y1="98" x2="372" y2="424" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8CC2FF"/>
+      <stop offset="0.5" stop-color="#337DFF"/>
+      <stop offset="1" stop-color="#132A62"/>
+    </linearGradient>
+    <linearGradient id="lensStroke" x1="132" y1="128" x2="380" y2="382" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8AC1FF"/>
+      <stop offset="0.5" stop-color="#2F85FF"/>
+      <stop offset="1" stop-color="#132C69"/>
+    </linearGradient>
+    <linearGradient id="lensCenter" x1="210" y1="214" x2="312" y2="314" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EBF4FF"/>
+      <stop offset="1" stop-color="#C5DEFF"/>
+    </linearGradient>
+    <linearGradient id="pillarFill" x1="192" y1="74" x2="320" y2="438" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8CC4FF"/>
+      <stop offset="0.48" stop-color="#2D86FF"/>
+      <stop offset="1" stop-color="#112A67"/>
+    </linearGradient>
+    <filter id="shadow" x="0" y="0" width="1600" height="1180" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="22" stdDeviation="32" flood-color="#14264A" flood-opacity="0.08"/>
+    </filter>
+    <mask id="scribeCut">
+      <rect width="512" height="512" fill="white"/>
+      <circle cx="256" cy="324" r="24" fill="black"/>
+      <rect x="246" y="332" width="20" height="86" rx="10" fill="black"/>
+    </mask>
+    <mask id="pillarCut">
+      <rect width="512" height="512" fill="white"/>
+      <circle cx="256" cy="132" r="34" fill="black"/>
+      <rect x="238" y="180" width="36" height="190" rx="18" fill="black"/>
+    </mask>
+    <g id="mark-crown">
+      <path d="M112 366L158 118L232 230L256 108L280 230L354 118L400 366L256 446L112 366Z" fill="url(#crownFill)"/>
+      <path d="M158 118L232 230L112 366L256 446L196 260L158 118Z" fill="url(#crownFacet)"/>
+      <path d="M354 118L280 230L400 366L256 446L316 260L354 118Z" fill="url(#crownFacet)"/>
+      <path d="M232 230L256 176L280 230L256 306L232 230Z" fill="#EAF4FF" fill-opacity="0.9"/>
+    </g>
+    <g id="mark-scribe">
+      <path
+        mask="url(#scribeCut)"
+        d="M120 190L176 128L218 182L256 94L294 182L336 128L392 190L344 262L314 292L286 426H226L198 292L168 262L120 190Z"
+        fill="url(#scribeFill)"
+      />
+      <path d="M168 262C214 242 298 242 344 262" stroke="#E6F1FF" stroke-width="18" stroke-linecap="round"/>
+      <path d="M204 286L256 238L308 286" stroke="#102656" stroke-width="16" stroke-linecap="round" stroke-linejoin="round" opacity="0.45"/>
+    </g>
+    <g id="mark-lens">
+      <path d="M152 178C183 139 224 118 274 118C327 118 369 145 389 194" stroke="url(#lensStroke)" stroke-width="56" stroke-linecap="round"/>
+      <path d="M360 334C329 373 288 394 238 394C185 394 143 367 123 318" stroke="url(#lensStroke)" stroke-width="56" stroke-linecap="round"/>
+      <path d="M256 194L330 256L256 318L182 256L256 194Z" fill="url(#lensCenter)"/>
+      <circle cx="256" cy="256" r="34" fill="#18366F"/>
+      <path d="M150 270C170 326 212 360 278 360" stroke="#9CC6FF" stroke-width="16" stroke-linecap="round"/>
+      <path d="M362 242C342 186 300 152 234 152" stroke="#123B8C" stroke-width="16" stroke-linecap="round"/>
+    </g>
+    <g id="mark-pillar">
+      <rect x="170" y="72" width="172" height="368" rx="86" fill="url(#pillarFill)" mask="url(#pillarCut)"/>
+      <path d="M202 118C219 102 238 94 256 94" stroke="#E8F3FF" stroke-width="12" stroke-linecap="round"/>
+      <path d="M310 392C292 410 274 418 256 418" stroke="#0F2A67" stroke-width="12" stroke-linecap="round" opacity="0.5"/>
+    </g>
+  </defs>
+
+  <rect width="1600" height="1180" rx="48" fill="url(#boardBg)"/>
+  <text x="104" y="122" fill="#0F172A" font-family="Syne, Arial, sans-serif" font-size="56" font-weight="700">Iris smart-tech mark round</text>
+  <text x="104" y="168" fill="#4B5A73" font-family="Manrope, Arial, sans-serif" font-size="24">Using the four references as raw logic only, then simplifying for recognition, small size, and a more technical feel.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="88" y="226" width="338" height="418" rx="32" fill="url(#cardBg)" stroke="#D9E4F2"/>
+    <rect x="456" y="226" width="338" height="418" rx="32" fill="url(#cardBg)" stroke="#D9E4F2"/>
+    <rect x="824" y="226" width="338" height="418" rx="32" fill="url(#cardBg)" stroke="#D9E4F2"/>
+    <rect x="1192" y="226" width="338" height="418" rx="32" fill="url(#cardBg)" stroke="#D9E4F2"/>
+  </g>
+
+  <g transform="translate(112 248) scale(0.54)">
+    <use href="#mark-crown"/>
+  </g>
+  <g transform="translate(480 248) scale(0.54)">
+    <use href="#mark-scribe"/>
+  </g>
+  <g transform="translate(848 248) scale(0.54)">
+    <use href="#mark-lens"/>
+  </g>
+  <g transform="translate(1216 248) scale(0.54)">
+    <use href="#mark-pillar"/>
+  </g>
+
+  <text x="120" y="588" fill="#111827" font-family="Syne, Arial, sans-serif" font-size="28" font-weight="700">Crown Node</text>
+  <text x="120" y="622" fill="#56657E" font-family="Manrope, Arial, sans-serif" font-size="18">Sharper silhouette. Keeps the crown energy but removes decorative detail.</text>
+
+  <text x="488" y="588" fill="#111827" font-family="Syne, Arial, sans-serif" font-size="28" font-weight="700">Scribe Crest</text>
+  <text x="488" y="622" fill="#56657E" font-family="Manrope, Arial, sans-serif" font-size="18">Authority plus authorship. Stronger than the source, but still the least minimal.</text>
+
+  <text x="856" y="588" fill="#111827" font-family="Syne, Arial, sans-serif" font-size="28" font-weight="700">Lens Core</text>
+  <text x="856" y="622" fill="#56657E" font-family="Manrope, Arial, sans-serif" font-size="18">Perception and intelligence without becoming a literal eye illustration.</text>
+
+  <text x="1224" y="588" fill="#111827" font-family="Syne, Arial, sans-serif" font-size="28" font-weight="700">Pillar Signal</text>
+  <text x="1224" y="622" fill="#56657E" font-family="Manrope, Arial, sans-serif" font-size="18">The strongest small-size behavior. Most monolithic and most immediately icon-ready.</text>
+
+  <text x="104" y="744" fill="#0F172A" font-family="IBM Plex Mono, monospace" font-size="24">small-size check</text>
+  <text x="104" y="782" fill="#5A6780" font-family="IBM Plex Mono, monospace" font-size="16">48</text>
+  <text x="104" y="842" fill="#5A6780" font-family="IBM Plex Mono, monospace" font-size="16">32</text>
+  <text x="104" y="894" fill="#5A6780" font-family="IBM Plex Mono, monospace" font-size="16">20</text>
+
+  <g transform="translate(170 760) scale(0.09375)"><use href="#mark-crown"/></g>
+  <g transform="translate(220 772) scale(0.0625)"><use href="#mark-crown"/></g>
+  <g transform="translate(262 782) scale(0.0390625)"><use href="#mark-crown"/></g>
+
+  <g transform="translate(488 760) scale(0.09375)"><use href="#mark-scribe"/></g>
+  <g transform="translate(538 772) scale(0.0625)"><use href="#mark-scribe"/></g>
+  <g transform="translate(580 782) scale(0.0390625)"><use href="#mark-scribe"/></g>
+
+  <g transform="translate(856 760) scale(0.09375)"><use href="#mark-lens"/></g>
+  <g transform="translate(906 772) scale(0.0625)"><use href="#mark-lens"/></g>
+  <g transform="translate(948 782) scale(0.0390625)"><use href="#mark-lens"/></g>
+
+  <g transform="translate(1224 760) scale(0.09375)"><use href="#mark-pillar"/></g>
+  <g transform="translate(1274 772) scale(0.0625)"><use href="#mark-pillar"/></g>
+  <g transform="translate(1316 782) scale(0.0390625)"><use href="#mark-pillar"/></g>
+
+  <rect x="88" y="950" width="1442" height="142" rx="28" fill="#FFFFFF" stroke="#D9E4F2"/>
+  <text x="120" y="1008" fill="#0F172A" font-family="Syne, Arial, sans-serif" font-size="26" font-weight="700">Initial read</text>
+  <text x="120" y="1050" fill="#516078" font-family="Manrope, Arial, sans-serif" font-size="22">Best small-size safety: Pillar Signal. Best balance of Iris and tech: Lens Core. Crown Node has personality, but needs one more pass to feel less generic. Scribe Crest is the most symbolic and most likely to lose clarity at favicon scale.</text>
+</svg>

@@ -1,0 +1,115 @@
+<svg width="1240" height="1160" viewBox="0 0 1240 1160" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="84" y1="64" x2="1148" y2="1080" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EEF3FB"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F6F9FD"/>
+    </linearGradient>
+
+    <linearGradient id="blueMain" x1="256" y1="102" x2="256" y2="428" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8FC7FF"/><stop offset="0.42" stop-color="#3B8DFF"/><stop offset="1" stop-color="#132A67"/>
+    </linearGradient>
+    <linearGradient id="blueEdgeL" x1="156" y1="164" x2="232" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F244F" stop-opacity="0"/><stop offset="1" stop-color="#0F244F" stop-opacity="0.24"/>
+    </linearGradient>
+    <linearGradient id="blueEdgeR" x1="356" y1="164" x2="280" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F244F" stop-opacity="0"/><stop offset="1" stop-color="#0F244F" stop-opacity="0.24"/>
+    </linearGradient>
+    <linearGradient id="blueCore" x1="256" y1="170" x2="256" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF6FF"/><stop offset="1" stop-color="#BED7FF"/>
+    </linearGradient>
+
+    <linearGradient id="violetMain" x1="256" y1="102" x2="256" y2="428" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9BEFF"/><stop offset="0.42" stop-color="#6E63FF"/><stop offset="0.76" stop-color="#8758FF"/><stop offset="1" stop-color="#2B1E6E"/>
+    </linearGradient>
+    <linearGradient id="violetEdgeL" x1="156" y1="164" x2="232" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F154D" stop-opacity="0"/><stop offset="1" stop-color="#1F154D" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="violetEdgeR" x1="356" y1="164" x2="280" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#1F154D" stop-opacity="0"/><stop offset="1" stop-color="#1F154D" stop-opacity="0.28"/>
+    </linearGradient>
+    <linearGradient id="violetCore" x1="256" y1="170" x2="256" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F2EEFF"/><stop offset="1" stop-color="#D1C9FF"/>
+    </linearGradient>
+
+    <linearGradient id="aquaMain" x1="256" y1="102" x2="256" y2="428" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9F0EA"/><stop offset="0.32" stop-color="#43D8CB"/><stop offset="0.64" stop-color="#2B8DFF"/><stop offset="1" stop-color="#12306E"/>
+    </linearGradient>
+    <linearGradient id="aquaEdgeL" x1="156" y1="164" x2="232" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12355D" stop-opacity="0"/><stop offset="1" stop-color="#12355D" stop-opacity="0.26"/>
+    </linearGradient>
+    <linearGradient id="aquaEdgeR" x1="356" y1="164" x2="280" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#12355D" stop-opacity="0"/><stop offset="1" stop-color="#12355D" stop-opacity="0.26"/>
+    </linearGradient>
+    <linearGradient id="aquaCore" x1="256" y1="170" x2="256" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F0FFFD"/><stop offset="1" stop-color="#C9F1EE"/>
+    </linearGradient>
+
+    <linearGradient id="nightMain" x1="256" y1="102" x2="256" y2="428" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDE8FF"/><stop offset="0.38" stop-color="#8EA7D9"/><stop offset="0.72" stop-color="#365387"/><stop offset="1" stop-color="#101C39"/>
+    </linearGradient>
+    <linearGradient id="nightEdgeL" x1="156" y1="164" x2="232" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#091224" stop-opacity="0"/><stop offset="1" stop-color="#091224" stop-opacity="0.32"/>
+    </linearGradient>
+    <linearGradient id="nightEdgeR" x1="356" y1="164" x2="280" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#091224" stop-opacity="0"/><stop offset="1" stop-color="#091224" stop-opacity="0.32"/>
+    </linearGradient>
+    <linearGradient id="nightCore" x1="256" y1="170" x2="256" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/><stop offset="1" stop-color="#D9E5F8"/>
+    </linearGradient>
+
+    <g id="mark-blue">
+      <path d="M144 356L180 122L234 222L256 102L278 222L332 122L368 356L256 428L144 356Z" fill="url(#blueMain)"/>
+      <path d="M180 122L234 222L190 330L144 356L180 122Z" fill="url(#blueEdgeL)"/>
+      <path d="M332 122L278 222L322 330L368 356L332 122Z" fill="url(#blueEdgeR)"/>
+      <path d="M234 222L256 166L278 222L256 354L234 222Z" fill="url(#blueCore)"/>
+    </g>
+    <g id="mark-violet">
+      <path d="M144 356L180 122L234 222L256 102L278 222L332 122L368 356L256 428L144 356Z" fill="url(#violetMain)"/>
+      <path d="M180 122L234 222L190 330L144 356L180 122Z" fill="url(#violetEdgeL)"/>
+      <path d="M332 122L278 222L322 330L368 356L332 122Z" fill="url(#violetEdgeR)"/>
+      <path d="M234 222L256 166L278 222L256 354L234 222Z" fill="url(#violetCore)"/>
+    </g>
+    <g id="mark-aqua">
+      <path d="M144 356L180 122L234 222L256 102L278 222L332 122L368 356L256 428L144 356Z" fill="url(#aquaMain)"/>
+      <path d="M180 122L234 222L190 330L144 356L180 122Z" fill="url(#aquaEdgeL)"/>
+      <path d="M332 122L278 222L322 330L368 356L332 122Z" fill="url(#aquaEdgeR)"/>
+      <path d="M234 222L256 166L278 222L256 354L234 222Z" fill="url(#aquaCore)"/>
+    </g>
+    <g id="mark-night">
+      <path d="M144 356L180 122L234 222L256 102L278 222L332 122L368 356L256 428L144 356Z" fill="url(#nightMain)"/>
+      <path d="M180 122L234 222L190 330L144 356L180 122Z" fill="url(#nightEdgeL)"/>
+      <path d="M332 122L278 222L322 330L368 356L332 122Z" fill="url(#nightEdgeR)"/>
+      <path d="M234 222L256 166L278 222L256 354L234 222Z" fill="url(#nightCore)"/>
+    </g>
+  </defs>
+
+  <rect width="1240" height="1160" rx="40" fill="url(#bg)"/>
+  <text x="72" y="94" fill="#0F172A" font-family="Syne, Arial, sans-serif" font-size="48" font-weight="700">Crown Node v3 colour round</text>
+  <text x="72" y="136" fill="#55657F" font-family="Manrope, Arial, sans-serif" font-size="24">Same shape, four different moods. This is only about palette and tone.</text>
+
+  <rect x="56" y="194" width="540" height="408" rx="30" fill="url(#card)" stroke="#D9E4F2"/>
+  <rect x="644" y="194" width="540" height="408" rx="30" fill="url(#card)" stroke="#D9E4F2"/>
+  <rect x="56" y="650" width="540" height="408" rx="30" fill="url(#card)" stroke="#D9E4F2"/>
+  <rect x="644" y="650" width="540" height="408" rx="30" fill="url(#card)" stroke="#D9E4F2"/>
+
+  <g transform="translate(126 214) scale(0.62)"><use href="#mark-blue"/></g>
+  <g transform="translate(714 214) scale(0.62)"><use href="#mark-violet"/></g>
+  <g transform="translate(126 670) scale(0.62)"><use href="#mark-aqua"/></g>
+  <g transform="translate(714 670) scale(0.62)"><use href="#mark-night"/></g>
+
+  <text x="88" y="518" fill="#111827" font-family="Syne, Arial, sans-serif" font-size="30" font-weight="700">Blue Core</text>
+  <text x="88" y="550" fill="#5C6B85" font-family="IBM Plex Mono, monospace" font-size="16">most aligned with current Iris brand system</text>
+
+  <text x="676" y="518" fill="#111827" font-family="Syne, Arial, sans-serif" font-size="30" font-weight="700">Violet Shift</text>
+  <text x="676" y="550" fill="#5C6B85" font-family="IBM Plex Mono, monospace" font-size="16">more expressive, more startup-brand, slightly less calm</text>
+
+  <text x="88" y="974" fill="#111827" font-family="Syne, Arial, sans-serif" font-size="30" font-weight="700">Aqua Signal</text>
+  <text x="88" y="1006" fill="#5C6B85" font-family="IBM Plex Mono, monospace" font-size="16">freshest and most product-tech feeling</text>
+
+  <text x="676" y="974" fill="#111827" font-family="Syne, Arial, sans-serif" font-size="30" font-weight="700">Night Mono</text>
+  <text x="676" y="1006" fill="#5C6B85" font-family="IBM Plex Mono, monospace" font-size="16">most premium and controlled, strongest for dark contexts</text>
+</svg>

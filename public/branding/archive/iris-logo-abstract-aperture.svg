@@ -1,0 +1,35 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="apertureBlue" x1="118" y1="120" x2="388" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#63D7FF"/>
+      <stop offset="0.42" stop-color="#2C82FF"/>
+      <stop offset="1" stop-color="#0D3A80"/>
+    </linearGradient>
+    <linearGradient id="aperturePink" x1="214" y1="156" x2="360" y2="330" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF5A9A"/>
+      <stop offset="1" stop-color="#FF9757"/>
+    </linearGradient>
+    <linearGradient id="apertureViolet" x1="166" y1="192" x2="286" y2="364" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8B57FF"/>
+      <stop offset="1" stop-color="#2B7DFF"/>
+    </linearGradient>
+    <linearGradient id="apertureCenter" x1="224" y1="170" x2="290" y2="342" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4FAFF"/>
+      <stop offset="1" stop-color="#D7E9FF"/>
+    </linearGradient>
+    <filter id="shadowAperture" x="88" y="104" width="336" height="308" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#173B7F" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowAperture)">
+    <path d="M116 256C150 189.333 196.667 154 256 154C315.333 154 362 189.333 396 256C362 322.667 315.333 358 256 358C196.667 358 150 322.667 116 256Z" stroke="url(#apertureBlue)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M270 184C314 190 345 222 352 262C345 302 314 334 270 340C292 314.667 303 286.667 303 256C303 225.333 292 201.333 270 184Z" fill="url(#aperturePink)"/>
+    <path d="M242 336C199.333 326 169.667 294.667 163 256C169.667 217.333 199.333 186 242 176C220 202 209 228.667 209 256C209 283.333 220 310 242 336Z" fill="url(#apertureViolet)"/>
+    <path d="M229 197C248.333 205.667 258 225.333 258 256C258 286.667 248.333 306.333 229 315C212.333 297.667 204 278 204 256C204 234 212.333 214.333 229 197Z" fill="#6A6FFF" fill-opacity="0.18"/>
+    <path d="M256 182V326" stroke="url(#apertureCenter)" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="256" cy="166" r="16" fill="url(#apertureCenter)"/>
+    <path d="M225 340C225 322.879 238.879 309 256 309C273.121 309 287 322.879 287 340V350H225V340Z" fill="url(#apertureCenter)"/>
+    <circle cx="256" cy="256" r="46" stroke="#E7F2FF" stroke-width="10"/>
+  </g>
+</svg>

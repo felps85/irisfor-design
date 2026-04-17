@@ -1,0 +1,38 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="outerRibbon" x1="96" y1="160" x2="416" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#5EC8FF"/>
+      <stop offset="0.38" stop-color="#2F7DFF"/>
+      <stop offset="0.7" stop-color="#6B4DFF"/>
+      <stop offset="1" stop-color="#FF4D8D"/>
+    </linearGradient>
+    <linearGradient id="innerRibbonA" x1="156" y1="182" x2="344" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#54D6FF"/>
+      <stop offset="0.5" stop-color="#2E86FF"/>
+      <stop offset="1" stop-color="#9A47FF"/>
+    </linearGradient>
+    <linearGradient id="innerRibbonB" x1="334" y1="180" x2="184" y2="360" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFD35C"/>
+      <stop offset="0.42" stop-color="#FF6B72"/>
+      <stop offset="1" stop-color="#684DFF"/>
+    </linearGradient>
+    <linearGradient id="centerGlow" x1="228" y1="162" x2="288" y2="348" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F3F9FF"/>
+      <stop offset="1" stop-color="#D6E8FF"/>
+    </linearGradient>
+    <filter id="shadowRibbon" x="68" y="100" width="376" height="312" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="18" flood-color="#173B7F" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#shadowRibbon)">
+    <path d="M96 256C147.333 177.333 200.667 138 256 138C311.333 138 364.667 177.333 416 256C364.667 334.667 311.333 374 256 374C200.667 374 147.333 334.667 96 256Z" stroke="url(#outerRibbon)" stroke-width="28" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M156 294C183 234 227 199 287 190C325.495 184.226 358.333 195 386 222" stroke="url(#innerRibbonA)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M352 296C324.667 337.333 287 358 239 358C203.991 358 176 346 155 322" stroke="url(#innerRibbonB)" stroke-width="34" stroke-linecap="round"/>
+    <path d="M234 197C246 186.333 261.333 181 280 181C305.333 181 326.667 193 344 217" stroke="url(#innerRibbonB)" stroke-width="24" stroke-linecap="round"/>
+    <path d="M184 242C205.333 211.333 228 196 252 196C283.333 196 309 217.333 329 260C311 303.333 286.667 326 256 328C229.333 329.333 207 316 189 288" stroke="url(#innerRibbonA)" stroke-width="24" stroke-linecap="round"/>
+    <circle cx="256" cy="169" r="16" fill="url(#centerGlow)"/>
+    <path d="M256 186V316" stroke="url(#centerGlow)" stroke-width="16" stroke-linecap="round"/>
+    <path d="M222 342C222 323.222 237.222 308 256 308C274.778 308 290 323.222 290 342V352H222V342Z" fill="url(#centerGlow)"/>
+  </g>
+</svg>

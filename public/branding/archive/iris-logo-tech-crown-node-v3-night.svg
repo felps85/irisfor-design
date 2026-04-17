@@ -1,0 +1,27 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="crownMain" x1="256" y1="102" x2="256" y2="428" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDE8FF"/>
+      <stop offset="0.38" stop-color="#8EA7D9"/>
+      <stop offset="0.72" stop-color="#365387"/>
+      <stop offset="1" stop-color="#101C39"/>
+    </linearGradient>
+    <linearGradient id="crownEdgeLeft" x1="156" y1="164" x2="232" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#091224" stop-opacity="0"/>
+      <stop offset="1" stop-color="#091224" stop-opacity="0.32"/>
+    </linearGradient>
+    <linearGradient id="crownEdgeRight" x1="356" y1="164" x2="280" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#091224" stop-opacity="0"/>
+      <stop offset="1" stop-color="#091224" stop-opacity="0.32"/>
+    </linearGradient>
+    <linearGradient id="crownCore" x1="256" y1="170" x2="256" y2="352" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#D9E5F8"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M144 356L180 122L234 222L256 102L278 222L332 122L368 356L256 428L144 356Z" fill="url(#crownMain)"/>
+  <path d="M180 122L234 222L190 330L144 356L180 122Z" fill="url(#crownEdgeLeft)"/>
+  <path d="M332 122L278 222L322 330L368 356L332 122Z" fill="url(#crownEdgeRight)"/>
+  <path d="M234 222L256 166L278 222L256 354L234 222Z" fill="url(#crownCore)"/>
+</svg>

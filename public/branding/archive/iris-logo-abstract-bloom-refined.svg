@@ -1,0 +1,30 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bloomRefinedA" x1="156" y1="122" x2="300" y2="282" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#59D9FF"/>
+      <stop offset="0.52" stop-color="#2F84FF"/>
+      <stop offset="1" stop-color="#6D53FF"/>
+    </linearGradient>
+    <linearGradient id="bloomRefinedB" x1="244" y1="142" x2="382" y2="294" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7A53FF"/>
+      <stop offset="0.52" stop-color="#FF4F97"/>
+      <stop offset="1" stop-color="#FFAC59"/>
+    </linearGradient>
+    <linearGradient id="bloomRefinedC" x1="172" y1="250" x2="336" y2="392" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#33D5CB"/>
+      <stop offset="0.48" stop-color="#2F8BFF"/>
+      <stop offset="1" stop-color="#7054FF"/>
+    </linearGradient>
+    <filter id="shadowBloomRefined" x="100" y="98" width="312" height="320" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#163B80" flood-opacity="0.16"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadowBloomRefined)">
+    <path d="M250 110C306.333 110 352 155.667 352 212C352 235.333 344.333 255.667 329 273L250 212V110Z" fill="url(#bloomRefinedB)"/>
+    <path d="M160 194C160 147.055 198.055 109 245 109C268.222 109 289.268 118.317 304.646 133.428L245 230L160 194Z" fill="url(#bloomRefinedA)"/>
+    <path d="M160 294C160 237.667 205.667 192 262 192C292 192 318.333 205 341 231L262 294H160Z" fill="url(#bloomRefinedC)"/>
+    <path d="M270 402C214.219 402 169 356.781 169 301C169 276.773 177.529 254.538 191.743 237.133L270 301V402Z" fill="url(#bloomRefinedA)"/>
+    <path d="M358 316C358 362.944 319.944 401 273 401C249.778 401 228.732 391.683 213.354 376.572L273 280L358 316Z" fill="url(#bloomRefinedB)"/>
+    <circle cx="258" cy="256" r="44" fill="#F7FAFF"/>
+  </g>
+</svg>

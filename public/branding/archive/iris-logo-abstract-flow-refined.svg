@@ -1,0 +1,26 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flowRefinedA" x1="124" y1="132" x2="318" y2="378" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#56D8FF"/>
+      <stop offset="0.46" stop-color="#2E82FF"/>
+      <stop offset="1" stop-color="#6B53FF"/>
+    </linearGradient>
+    <linearGradient id="flowRefinedB" x1="238" y1="146" x2="404" y2="358" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7A54FF"/>
+      <stop offset="0.5" stop-color="#FF4F96"/>
+      <stop offset="1" stop-color="#FFAA58"/>
+    </linearGradient>
+    <linearGradient id="flowRefinedAccent" x1="174" y1="244" x2="244" y2="326" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#36D5CD"/>
+      <stop offset="1" stop-color="#2E8BFF"/>
+    </linearGradient>
+    <filter id="shadowFlowRefined" x="82" y="102" width="352" height="320" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#163B80" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+  <g filter="url(#shadowFlowRefined)">
+    <path d="M138 286C138 205.366 190.157 146 259 146C307.861 146 346.489 174.999 366 223" stroke="url(#flowRefinedA)" stroke-width="60" stroke-linecap="round"/>
+    <path d="M376 238C376 316.76 325.699 372 257 372C210.977 372 172.866 347.415 151 308" stroke="url(#flowRefinedB)" stroke-width="60" stroke-linecap="round"/>
+    <path d="M190 266C205.333 287.333 228.667 298 260 298" stroke="url(#flowRefinedAccent)" stroke-width="24" stroke-linecap="round"/>
+  </g>
+</svg>

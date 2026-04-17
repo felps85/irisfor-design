@@ -1,0 +1,49 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ringWarmCool" x1="128" y1="122" x2="384" y2="390" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A9D3FF"/>
+      <stop offset="0.52" stop-color="#2E84FF"/>
+      <stop offset="1" stop-color="#112A67"/>
+    </linearGradient>
+    <linearGradient id="ringSoft" x1="122" y1="390" x2="392" y2="122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#DDEBFF"/>
+      <stop offset="1" stop-color="#7EB6FF"/>
+    </linearGradient>
+    <linearGradient id="eyeFill" x1="176" y1="210" x2="336" y2="302" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4F9FF"/>
+      <stop offset="1" stop-color="#C7DEFF"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M256 92C346.575 92 420 165.425 420 256C420 346.575 346.575 420 256 420C165.425 420 92 346.575 92 256C92 165.425 165.425 92 256 92Z" fill="url(#ringSoft)"/>
+  <path d="M256 126C327.797 126 386 184.203 386 256C386 327.797 327.797 386 256 386C184.203 386 126 327.797 126 256C126 184.203 184.203 126 256 126Z" fill="#F7FBFF"/>
+
+  <path d="M132 256C132 187.516 187.516 132 256 132C310.14 132 356.176 166.684 373.06 215.02L314 215C300 179 261 152 222 160C183 168 151 202 151 256L132 256Z" fill="url(#ringWarmCool)"/>
+  <path d="M380 256C380 324.484 324.484 380 256 380C201.86 380 155.824 345.316 138.94 296.98L198 297C212 333 251 360 290 352C329 344 361 310 361 256H380Z" fill="url(#ringWarmCool)"/>
+  <path d="M256 132C324.484 132 380 187.516 380 256H361C361 202 329 168 290 160C251 152 212 179 198 215L138.94 215.02C155.824 166.684 201.86 132 256 132Z" fill="#9FC7FF"/>
+  <path d="M256 380C187.516 380 132 324.484 132 256L151 256C151 310 183 344 222 352C261 360 300 333 314 297L373.06 296.98C356.176 345.316 310.14 380 256 380Z" fill="#1B4FAE"/>
+
+  <g opacity="0.48" stroke="#3E577D" stroke-width="6" stroke-linecap="round">
+    <path d="M166 178V238"/>
+    <path d="M182 168V234"/>
+    <path d="M198 160V230"/>
+    <path d="M214 154V226"/>
+    <path d="M298 286V356"/>
+    <path d="M314 282V350"/>
+    <path d="M330 274V344"/>
+    <path d="M346 264V338"/>
+    <path d="M166 274V338"/>
+    <path d="M182 280V344"/>
+    <path d="M198 286V350"/>
+    <path d="M214 292V356"/>
+    <path d="M298 154V226"/>
+    <path d="M314 160V230"/>
+    <path d="M330 168V234"/>
+    <path d="M346 178V238"/>
+  </g>
+
+  <path d="M176 256C202.667 214.667 229.333 194 256 194C282.667 194 309.333 214.667 336 256C309.333 297.333 282.667 318 256 318C229.333 318 202.667 297.333 176 256Z" fill="url(#eyeFill)"/>
+  <path d="M188 256C210 223.333 232.667 207 256 207C279.333 207 302 223.333 324 256C302 288.667 279.333 305 256 305C232.667 305 210 288.667 188 256Z" fill="#584C4A"/>
+  <circle cx="256" cy="256" r="28" fill="#E5F0FF"/>
+  <circle cx="256" cy="256" r="18" fill="#19366D"/>
+</svg>

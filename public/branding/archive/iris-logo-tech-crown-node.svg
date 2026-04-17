@@ -1,0 +1,18 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="crownFill" x1="128" y1="112" x2="360" y2="416" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#78B8FF"/>
+      <stop offset="0.52" stop-color="#2D83FF"/>
+      <stop offset="1" stop-color="#102A67"/>
+    </linearGradient>
+    <linearGradient id="crownFacet" x1="186" y1="174" x2="330" y2="388" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0F214E" stop-opacity="0"/>
+      <stop offset="1" stop-color="#0F214E" stop-opacity="0.45"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M112 366L158 118L232 230L256 108L280 230L354 118L400 366L256 446L112 366Z" fill="url(#crownFill)"/>
+  <path d="M158 118L232 230L112 366L256 446L196 260L158 118Z" fill="url(#crownFacet)"/>
+  <path d="M354 118L280 230L400 366L256 446L316 260L354 118Z" fill="url(#crownFacet)"/>
+  <path d="M232 230L256 176L280 230L256 306L232 230Z" fill="#EAF4FF" fill-opacity="0.9"/>
+</svg>

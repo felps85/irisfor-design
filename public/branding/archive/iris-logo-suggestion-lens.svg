@@ -1,0 +1,33 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgLens" x1="92" y1="72" x2="426" y2="442" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#E4EEFD"/>
+    </linearGradient>
+    <linearGradient id="strokeLens" x1="118" y1="120" x2="398" y2="392" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#9AC1FF"/>
+      <stop offset="0.48" stop-color="#2B7DFF"/>
+      <stop offset="1" stop-color="#0D387C"/>
+    </linearGradient>
+    <linearGradient id="fillLens" x1="220" y1="160" x2="298" y2="340" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EFF6FF"/>
+      <stop offset="1" stop-color="#C4DBFF"/>
+    </linearGradient>
+    <filter id="shadowLens" x="80" y="88" width="352" height="336" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#163B80" flood-opacity="0.14"/>
+    </filter>
+  </defs>
+
+  <rect width="512" height="512" rx="132" fill="url(#bgLens)"/>
+  <g filter="url(#shadowLens)">
+    <path d="M114 256C149 190 198 153 256 153C314 153 363 190 398 256C363 322 314 359 256 359C198 359 149 322 114 256Z" stroke="url(#strokeLens)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M173 256C194.333 219.333 222 201 256 201" stroke="#8FB7FF" stroke-width="11" stroke-linecap="round"/>
+    <path d="M339 256C319 291.333 291.333 311 256 311" stroke="#1D63DD" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="256" cy="256" r="58" stroke="#DCEAFE" stroke-width="12"/>
+    <path d="M256 186V329" stroke="url(#strokeLens)" stroke-width="18" stroke-linecap="round"/>
+    <circle cx="256" cy="168" r="20" fill="url(#fillLens)"/>
+    <path d="M225 340C225 322.879 238.879 309 256 309C273.121 309 287 322.879 287 340V350H225V340Z" fill="url(#fillLens)"/>
+    <path d="M216 233C230.452 219.435 242.785 214.5 256 214.5C269.215 214.5 281.548 219.435 296 233" stroke="#E8F2FF" stroke-width="10" stroke-linecap="round"/>
+    <path d="M213 276C229.765 292.212 244.098 299.5 256 299.5C267.902 299.5 282.235 292.212 299 276" stroke="#E8F2FF" stroke-width="10" stroke-linecap="round"/>
+  </g>
+</svg>

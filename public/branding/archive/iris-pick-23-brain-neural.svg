@@ -1,0 +1,42 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="72" fill="#F4F7FC"/>
+  <defs>
+    <linearGradient id="brainNeuralLeft" x1="96" y1="108" x2="248" y2="360" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#79E6FF"/>
+      <stop offset="100%" stop-color="#3459FF"/>
+    </linearGradient>
+    <linearGradient id="brainNeuralRight" x1="248" y1="112" x2="410" y2="372" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFD06F"/>
+      <stop offset="100%" stop-color="#FF57A0"/>
+    </linearGradient>
+    <linearGradient id="brainNeuralLowLeft" x1="134" y1="278" x2="232" y2="406" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#88FFE2"/>
+      <stop offset="100%" stop-color="#19C9A2"/>
+    </linearGradient>
+    <linearGradient id="brainNeuralLowRight" x1="274" y1="262" x2="386" y2="406" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF8C8A"/>
+      <stop offset="100%" stop-color="#FF57A5"/>
+    </linearGradient>
+  </defs>
+  <g transform="translate(78 80)">
+    <path d="M120 34C96 40 75 60 64 90C53 120 51 156 57 190C64 232 87 266 121 280C147 291 173 284 189 261C204 239 209 207 204 166C198 114 183 71 158 45C148 35 133 31 120 34Z" fill="url(#brainNeuralLeft)"/>
+    <path d="M245 30C272 27 298 36 317 58C335 79 344 108 346 141C349 187 333 235 302 271C279 298 252 311 226 307C198 303 176 283 164 248C150 206 151 151 173 98C186 66 208 38 245 30Z" fill="url(#brainNeuralRight)"/>
+    <path d="M136 222C117 228 102 241 98 257C94 274 101 290 115 298C129 306 147 304 162 294C179 282 191 261 190 243C188 227 179 217 165 215C155 214 145 216 136 222Z" fill="url(#brainNeuralLowLeft)"/>
+    <path d="M271 214C295 213 316 223 327 240C338 257 338 279 328 297C317 317 295 331 271 334C247 337 222 328 208 310C194 291 192 266 203 245C214 226 238 216 271 214Z" fill="url(#brainNeuralLowRight)"/>
+    <circle cx="164" cy="41" r="24" fill="#B97BFF"/>
+    <circle cx="224" cy="35" r="28" fill="#7283FF"/>
+
+    <path d="M185 46C193 74 194 101 193 137C192 183 197 225 214 259" stroke="#101826" stroke-width="20" stroke-linecap="round"/>
+    <path d="M192 136C221 124 245 107 271 76" stroke="#101826" stroke-width="18" stroke-linecap="round"/>
+    <path d="M194 184C226 171 254 153 279 127" stroke="#101826" stroke-width="18" stroke-linecap="round"/>
+
+    <circle cx="183" cy="136" r="8" fill="#101826"/>
+    <circle cx="194" cy="184" r="8" fill="#101826"/>
+    <circle cx="192" cy="98" r="7" fill="#101826"/>
+
+    <path d="M103 88C120 73 138 63 157 58" stroke="#DBF7FF" stroke-opacity="0.38" stroke-width="8" stroke-linecap="round"/>
+    <path d="M99 126C122 110 145 102 164 101" stroke="#DBF7FF" stroke-opacity="0.3" stroke-width="8" stroke-linecap="round"/>
+    <path d="M230 84C255 70 282 63 304 65" stroke="#FFF3C7" stroke-opacity="0.38" stroke-width="8" stroke-linecap="round"/>
+    <path d="M231 122C258 107 287 102 312 105" stroke="#FFE2D5" stroke-opacity="0.28" stroke-width="8" stroke-linecap="round"/>
+  </g>
+</svg>

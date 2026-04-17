@@ -1,0 +1,56 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="512" height="512" rx="72" fill="#F4F7FC"/>
+  <defs>
+    <linearGradient id="tightCortexLeft" x1="148" y1="118" x2="256" y2="330" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#73E2FF"/>
+      <stop offset="100%" stop-color="#2A61FF"/>
+    </linearGradient>
+    <linearGradient id="tightCortexLeftLow" x1="156" y1="274" x2="252" y2="392" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#8DFFE1"/>
+      <stop offset="100%" stop-color="#1CC6A5"/>
+    </linearGradient>
+    <linearGradient id="tightCortexRight" x1="264" y1="112" x2="394" y2="332" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFD473"/>
+      <stop offset="100%" stop-color="#FFA082"/>
+    </linearGradient>
+    <linearGradient id="tightCortexRightLow" x1="278" y1="250" x2="392" y2="394" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFA08A"/>
+      <stop offset="100%" stop-color="#FF57A1"/>
+    </linearGradient>
+    <linearGradient id="tightCortexBudA" x1="176" y1="100" x2="216" y2="138" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#C890FF"/>
+      <stop offset="100%" stop-color="#7846FF"/>
+    </linearGradient>
+    <linearGradient id="tightCortexBudB" x1="230" y1="96" x2="278" y2="142" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#A1B0FF"/>
+      <stop offset="100%" stop-color="#5D5BFF"/>
+    </linearGradient>
+    <clipPath id="tightCortexLeftMainClip">
+      <path d="M114 24C93 30 75 50 66 77C58 101 56 131 61 160C68 198 88 228 118 236C140 242 160 232 168 210C175 189 174 160 168 128C161 88 149 53 132 32C127 26 120 23 114 24Z"/>
+    </clipPath>
+    <clipPath id="tightCortexRightFullClip">
+      <path d="M249 27C273 26 295 37 307 60C318 81 321 108 316 135C309 168 291 197 267 212C246 225 224 224 208 211C193 198 186 176 186 150C186 109 196 69 216 43C225 31 237 27 249 27Z"/>
+      <path d="M266 160C287 160 305 170 315 187C326 203 328 224 321 244C314 264 298 280 279 286C260 291 239 285 225 270C211 255 205 234 208 211C211 187 224 171 245 163C252 161 259 160 266 160Z"/>
+    </clipPath>
+  </defs>
+  <g transform="translate(84 90)">
+    <path d="M114 24C93 30 75 50 66 77C58 101 56 131 61 160C68 198 88 228 118 236C140 242 160 232 168 210C175 189 174 160 168 128C161 88 149 53 132 32C127 26 120 23 114 24Z" fill="url(#tightCortexLeft)"/>
+    <path d="M132 211C113 216 98 231 94 250C90 269 100 286 117 292C133 297 150 290 160 275C171 257 172 234 162 220C155 212 143 209 132 211Z" fill="url(#tightCortexLeftLow)"/>
+    <path d="M249 27C273 26 295 37 307 60C318 81 321 108 316 135C309 168 291 197 267 212C246 225 224 224 208 211C193 198 186 176 186 150C186 109 196 69 216 43C225 31 237 27 249 27Z" fill="url(#tightCortexRight)"/>
+    <path d="M266 160C287 160 305 170 315 187C326 203 328 224 321 244C314 264 298 280 279 286C260 291 239 285 225 270C211 255 205 234 208 211C211 187 224 171 245 163C252 161 259 160 266 160Z" fill="url(#tightCortexRightLow)"/>
+    <path d="M157 12C146 15 139 24 140 35C141 48 151 56 163 57C175 58 185 51 188 40C191 27 184 15 171 12C166 11 161 11 157 12Z" fill="url(#tightCortexBudA)"/>
+    <path d="M212 11C225 9 238 16 243 27C248 38 245 50 236 57C226 64 212 64 201 56C191 49 188 36 194 25C198 17 204 13 212 11Z" fill="url(#tightCortexBudB)"/>
+
+    <path d="M173 36C184 65 187 90 186 127C185 170 191 214 212 253" stroke="#101626" stroke-width="20" stroke-linecap="round"/>
+    <path d="M183 126C212 116 236 100 261 71" stroke="#101626" stroke-width="18" stroke-linecap="round"/>
+    <path d="M185 173C216 162 242 145 266 120" stroke="#101626" stroke-width="18" stroke-linecap="round"/>
+
+    <path d="M94 88C113 72 132 61 151 57" stroke="#DDF6FF" stroke-opacity="0.44" stroke-width="9" stroke-linecap="round" clip-path="url(#tightCortexLeftMainClip)"/>
+    <path d="M91 127C114 111 138 102 158 101" stroke="#DDF6FF" stroke-opacity="0.34" stroke-width="9" stroke-linecap="round" clip-path="url(#tightCortexLeftMainClip)"/>
+
+    <path d="M228 84C253 70 278 63 301 65" stroke="#FFF2C9" stroke-opacity="0.40" stroke-width="9" stroke-linecap="round" clip-path="url(#tightCortexRightFullClip)"/>
+    <path d="M230 124C257 109 285 103 310 105" stroke="#FFE7CA" stroke-opacity="0.33" stroke-width="9" stroke-linecap="round" clip-path="url(#tightCortexRightFullClip)"/>
+    <path d="M229 166C257 154 286 149 311 151" stroke="#FFD8D8" stroke-opacity="0.27" stroke-width="9" stroke-linecap="round" clip-path="url(#tightCortexRightFullClip)"/>
+    <path d="M222 206C250 197 278 195 302 198" stroke="#FFD8D8" stroke-opacity="0.22" stroke-width="9" stroke-linecap="round" clip-path="url(#tightCortexRightFullClip)"/>
+  </g>
+</svg>

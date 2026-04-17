@@ -1,0 +1,23 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="stackB1" x1="162" y1="164" x2="322" y2="242" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF63AA"/>
+      <stop offset="0.48" stop-color="#7258FF"/>
+      <stop offset="1" stop-color="#2EA8FF"/>
+    </linearGradient>
+    <linearGradient id="stackB2" x1="168" y1="216" x2="292" y2="336" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2DDEFF"/>
+      <stop offset="0.46" stop-color="#2E8EFF"/>
+      <stop offset="1" stop-color="#5F60FF"/>
+    </linearGradient>
+    <linearGradient id="stackB3" x1="250" y1="188" x2="358" y2="326" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7857FF"/>
+      <stop offset="0.48" stop-color="#FF5EA6"/>
+      <stop offset="1" stop-color="#FFA959"/>
+    </linearGradient>
+  </defs>
+  <polygon points="168,170 286,132 354,190 236,228" fill="url(#stackB1)"/>
+  <polygon points="168,250 236,228 236,344 168,306" fill="url(#stackB2)"/>
+  <polygon points="236,228 354,190 354,290 236,328" fill="url(#stackB3)"/>
+  <polygon points="216,252 286,230 320,258 250,280" fill="#F8FAFF"/>
+</svg>

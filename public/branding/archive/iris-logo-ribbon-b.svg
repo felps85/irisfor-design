@@ -1,0 +1,28 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="ribbonB1" x1="252" y1="54" x2="334" y2="188" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7F5BFF"/>
+      <stop offset="0.5" stop-color="#FF5EA8"/>
+      <stop offset="1" stop-color="#FF8C66"/>
+    </linearGradient>
+    <linearGradient id="ribbonB2" x1="260" y1="180" x2="390" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FF8069"/>
+      <stop offset="0.5" stop-color="#FFB146"/>
+      <stop offset="1" stop-color="#FFDB4A"/>
+    </linearGradient>
+    <linearGradient id="ribbonB3" x1="176" y1="236" x2="268" y2="416" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#95D900"/>
+      <stop offset="0.5" stop-color="#2CD8C2"/>
+      <stop offset="1" stop-color="#3298FF"/>
+    </linearGradient>
+    <linearGradient id="ribbonB4" x1="224" y1="336" x2="320" y2="494" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2ED5C7"/>
+      <stop offset="0.52" stop-color="#2FA0FF"/>
+      <stop offset="1" stop-color="#5763FF"/>
+    </linearGradient>
+  </defs>
+  <path d="M274 50C312 75 328 112 321 152C316 183 296 204 274 222C257 203 248 179 248 154C248 107 260 72 274 50Z" fill="url(#ribbonB1)"/>
+  <path d="M268 218C316 191 372 196 395 235C418 274 402 322 363 349C327 374 289 383 253 406C263 371 262 334 242 301C227 274 230 241 268 218Z" fill="url(#ribbonB2)"/>
+  <path d="M241 216C206 232 181 261 171 299C159 341 170 386 207 420C237 391 255 355 261 317C267 276 258 241 241 216Z" fill="url(#ribbonB3)"/>
+  <path d="M252 370C274 354 302 350 328 358C314 377 298 392 285 409C272 425 262 444 257 466C236 446 233 406 252 370Z" fill="url(#ribbonB4)"/>
+</svg>

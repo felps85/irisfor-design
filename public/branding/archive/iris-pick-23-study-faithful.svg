@@ -1,0 +1,87 @@
+<svg width="760" height="1760" viewBox="0 0 760 1760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="760" height="1760" fill="#F4F6FB"/>
+
+  <text x="42" y="68" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="34" font-weight="800">Iris Pick 23 Study</text>
+  <text x="42" y="100" fill="#566277" font-family="Inter, Arial, sans-serif" font-size="18">A more shape-faithful pass: keep the real silhouette and branch cuts before adapting it.</text>
+
+  <g>
+    <rect x="28" y="136" width="704" height="500" rx="28" fill="#FFFFFF" stroke="#E1E7F1"/>
+    <text x="56" y="178" fill="#6A768E" font-family="IBM Plex Mono, monospace" font-size="16">01 / TRACE</text>
+    <text x="56" y="210" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Use the exact source crop</text>
+    <rect x="56" y="242" width="648" height="356" rx="28" fill="#0A0D13"/>
+    <defs>
+      <clipPath id="pick23TraceCrop">
+        <rect x="220" y="254" width="320" height="320" rx="24"/>
+      </clipPath>
+    </defs>
+    <rect x="220" y="254" width="320" height="320" rx="24" fill="#000000"/>
+    <image href="file:///Users/eldorado/Desktop/logo%20ref/2.webp" x="-740" y="-706" width="1920" height="1920" preserveAspectRatio="none" clip-path="url(#pick23TraceCrop)"/>
+  </g>
+
+  <g>
+    <rect x="28" y="664" width="704" height="500" rx="28" fill="#FFFFFF" stroke="#E1E7F1"/>
+    <text x="56" y="706" fill="#6A768E" font-family="IBM Plex Mono, monospace" font-size="16">02 / SIMPLIFY</text>
+    <text x="56" y="738" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Clean the form without changing the silhouette</text>
+    <rect x="56" y="770" width="648" height="356" rx="28" fill="#FFFEFA"/>
+
+    <g transform="translate(145 804)">
+      <path d="M114 24C93 30 75 50 66 77C58 101 56 131 61 160C68 198 88 228 118 236C140 242 160 232 168 210C175 189 174 160 168 128C161 88 149 53 132 32C127 26 120 23 114 24Z" fill="#151C2D"/>
+      <path d="M132 211C113 216 98 231 94 250C90 269 100 286 117 292C133 297 150 290 160 275C171 257 172 234 162 220C155 212 143 209 132 211Z" fill="#151C2D"/>
+      <path d="M249 27C273 26 295 37 307 60C318 81 321 108 316 135C309 168 291 197 267 212C246 225 224 224 208 211C193 198 186 176 186 150C186 109 196 69 216 43C225 31 237 27 249 27Z" fill="#151C2D"/>
+      <path d="M266 160C287 160 305 170 315 187C326 203 328 224 321 244C314 264 298 280 279 286C260 291 239 285 225 270C211 255 205 234 208 211C211 187 224 171 245 163C252 161 259 160 266 160Z" fill="#151C2D"/>
+      <path d="M157 12C146 15 139 24 140 35C141 48 151 56 163 57C175 58 185 51 188 40C191 27 184 15 171 12C166 11 161 11 157 12Z" fill="#151C2D"/>
+      <path d="M212 11C225 9 238 16 243 27C248 38 245 50 236 57C226 64 212 64 201 56C191 49 188 36 194 25C198 17 204 13 212 11Z" fill="#151C2D"/>
+
+      <path d="M173 36C184 65 187 90 186 127C185 170 191 214 212 253" stroke="#FFFEFA" stroke-width="20" stroke-linecap="round"/>
+      <path d="M183 126C212 116 236 100 261 71" stroke="#FFFEFA" stroke-width="18" stroke-linecap="round"/>
+      <path d="M185 173C216 162 242 145 266 120" stroke="#FFFEFA" stroke-width="18" stroke-linecap="round"/>
+    </g>
+  </g>
+
+  <g>
+    <rect x="28" y="1192" width="704" height="500" rx="28" fill="#101626" stroke="#243044"/>
+    <text x="56" y="1234" fill="#A8B5CC" font-family="IBM Plex Mono, monospace" font-size="16">03 / ADAPT</text>
+    <text x="56" y="1266" fill="#F6F8FC" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Apply Iris color and keep the same structure</text>
+    <rect x="56" y="1298" width="648" height="356" rx="28" fill="#131B2B"/>
+
+    <defs>
+      <linearGradient id="iris23Blue" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#66E1FF"/>
+        <stop offset="100%" stop-color="#255CFF"/>
+      </linearGradient>
+      <linearGradient id="iris23Violet" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#BF7BFF"/>
+        <stop offset="100%" stop-color="#6E3BFF"/>
+      </linearGradient>
+      <linearGradient id="iris23Teal" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#78FFD4"/>
+        <stop offset="100%" stop-color="#15C7A2"/>
+      </linearGradient>
+      <linearGradient id="iris23Coral" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#FF7C7C"/>
+        <stop offset="100%" stop-color="#FF4F9F"/>
+      </linearGradient>
+      <linearGradient id="iris23Amber" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#FFD973"/>
+        <stop offset="100%" stop-color="#FF971E"/>
+      </linearGradient>
+      <linearGradient id="iris23Indigo" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0%" stop-color="#91A5FF"/>
+        <stop offset="100%" stop-color="#584EFF"/>
+      </linearGradient>
+    </defs>
+
+    <g transform="translate(145 1332)">
+      <path d="M114 24C93 30 75 50 66 77C58 101 56 131 61 160C68 198 88 228 118 236C140 242 160 232 168 210C175 189 174 160 168 128C161 88 149 53 132 32C127 26 120 23 114 24Z" fill="url(#iris23Blue)"/>
+      <path d="M132 211C113 216 98 231 94 250C90 269 100 286 117 292C133 297 150 290 160 275C171 257 172 234 162 220C155 212 143 209 132 211Z" fill="url(#iris23Teal)"/>
+      <path d="M249 27C273 26 295 37 307 60C318 81 321 108 316 135C309 168 291 197 267 212C246 225 224 224 208 211C193 198 186 176 186 150C186 109 196 69 216 43C225 31 237 27 249 27Z" fill="url(#iris23Amber)"/>
+      <path d="M266 160C287 160 305 170 315 187C326 203 328 224 321 244C314 264 298 280 279 286C260 291 239 285 225 270C211 255 205 234 208 211C211 187 224 171 245 163C252 161 259 160 266 160Z" fill="url(#iris23Coral)"/>
+      <path d="M157 12C146 15 139 24 140 35C141 48 151 56 163 57C175 58 185 51 188 40C191 27 184 15 171 12C166 11 161 11 157 12Z" fill="url(#iris23Violet)"/>
+      <path d="M212 11C225 9 238 16 243 27C248 38 245 50 236 57C226 64 212 64 201 56C191 49 188 36 194 25C198 17 204 13 212 11Z" fill="url(#iris23Indigo)"/>
+
+      <path d="M173 36C184 65 187 90 186 127C185 170 191 214 212 253" stroke="#101626" stroke-width="20" stroke-linecap="round"/>
+      <path d="M183 126C212 116 236 100 261 71" stroke="#101626" stroke-width="18" stroke-linecap="round"/>
+      <path d="M185 173C216 162 242 145 266 120" stroke="#101626" stroke-width="18" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
