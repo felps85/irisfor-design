@@ -7,7 +7,10 @@ import { escapeHtml, renderSiteFrame } from "./site-shell.js";
 
 const app = document.querySelector("#app");
 const hostParam = new URLSearchParams(window.location.search).get("host");
-const initialModel = buildSiteInstallModel();
+const storedTokenBundle = loadStoredInstallToken();
+const initialModel = buildSiteInstallModel({
+  installToken: storedTokenBundle?.token
+});
 const DISPLAY_HOST_IDS = new Set(["cursor", "codex", "chatgpt", "claude", "figma"]);
 const FIGMA_HOST = {
   id: "figma",
@@ -25,7 +28,7 @@ const state = {
   installModel: initialModel,
   selectedHostId:
     (DISPLAY_HOST_IDS.has(hostParam) ? hostParam : null) || initialModel.hosts[0]?.id || "cursor",
-  tokenBundle: loadStoredInstallToken(),
+  tokenBundle: storedTokenBundle,
   actionState: "idle",
   copiedKey: null,
   error: null,
@@ -50,96 +53,45 @@ function escapeAttribute(value) {
   return escapeHtml(String(value)).replaceAll("\n", "&#10;");
 }
 
-function buildCodexCommand() {
-  if (!state.tokenBundle?.token) {
-    return "";
+function buildInstallArtifactCopyValue(artifact) {
+  if (artifact.kind === "fields") {
+    return [
+      artifact.title,
+      "",
+      ...artifact.fields.map((field) => `${field.label}: ${field.value}`)
+    ].join("\n");
   }
 
-  return `IRIS_MCP_TOKEN="${state.tokenBundle.token}" codex mcp add iris --url ${state.installModel.endpoint} --bearer-token-env-var IRIS_MCP_TOKEN`;
+  return artifact.content || "";
 }
 
-function buildDisplayCodexCommand() {
-  return `IRIS_MCP_TOKEN="<your personal Iris token>" codex mcp add iris --url "<your Iris connection URL>" --bearer-token-env-var IRIS_MCP_TOKEN`;
-}
+function renderInstallArtifact(host, artifact) {
+  const copyValue = buildInstallArtifactCopyValue(artifact);
 
-function buildCodexConfig() {
-  return `[mcp_servers.iris]
-url = "${state.installModel.endpoint}"
-bearer_token_env_var = "IRIS_MCP_TOKEN"`;
-}
-
-function buildDisplayCodexConfig() {
-  return `[mcp_servers.iris]
-url = "<your Iris connection URL>"
-bearer_token_env_var = "IRIS_MCP_TOKEN"`;
-}
-
-function buildCodexSetupDetails(host) {
-  if (!state.tokenBundle?.token) {
-    return "";
-  }
-
-  return [
-    "Iris setup for Codex",
-    "",
-    "Fastest path:",
-    buildCodexCommand(),
-    "",
-    "Fallback config:",
-    buildCodexConfig(),
-    "",
-    "Suggested first prompt:",
-    host.firstPrompt
-  ].join("\n");
-}
-
-function buildDisplayCodexSetupDetails(host) {
-  return [
-    "Iris setup for Codex",
-    "",
-    "Fastest path:",
-    buildDisplayCodexCommand(),
-    "",
-    "Fallback config:",
-    buildDisplayCodexConfig(),
-    "",
-    "Suggested first prompt:",
-    host.firstPrompt
-  ].join("\n");
-}
-
-function buildIrisSetupDetails(host) {
-  if (!state.tokenBundle?.token) {
-    return "";
-  }
-
-  return [
-    `Iris setup for ${host.name}`,
-    "",
-    "Iris connection URL:",
-    state.installModel.endpoint,
-    "",
-    "Personal Iris token:",
-    state.tokenBundle.token,
-    "",
-    "Suggested first prompt:",
-    host.firstPrompt
-  ].join("\n");
-}
-
-function buildDisplayIrisSetupDetails(host) {
-  return [
-    `Iris setup for ${host.name}`,
-    "",
-    "Iris connection URL:",
-    "<your Iris connection URL>",
-    "",
-    "Personal Iris token:",
-    "<your personal Iris token>",
-    "",
-    "Suggested first prompt:",
-    host.firstPrompt
-  ].join("\n");
+  return `
+    <div class="${artifact.kind === "fields" ? "field-card" : "code-card"}">
+      <div class="${artifact.kind === "fields" ? "field-card__header" : "code-card__header"}">
+        <div>
+          <p class="utility-label">${escapeHtml(artifact.title || `${host.name} setup`)}</p>
+          ${
+            artifact.description
+              ? `<span class="status-copy">${escapeHtml(artifact.description)}</span>`
+              : ""
+          }
+        </div>
+        ${renderCopyButton({
+          key: `setup:${host.id}:${artifact.id || artifact.title || "artifact"}`,
+          value: copyValue,
+          label: `${host.name} setup`
+        })}
+      </div>
+      <pre class="code-block code-block--display">${escapeHtml(
+        artifact.kind === "fields"
+          ? artifact.fields.map((field) => `${field.label}: ${field.value}`).join("\n")
+          : artifact.content || ""
+      )}</pre>
+    </div>
+  `;
 }
 
 function renderCopyIcon() {
@@ -230,61 +182,29 @@ function buildHostSetupBlock(host, supportHref) {
   if (!state.tokenBundle?.token) {
     return `
       <div class="connection-panel connection-panel--simple">
-        <p class="utility-label">Start free</p>
+        <p class="utility-label">Free beta access</p>
         <p class="connection-intro">
-          One free Iris start reveals the exact setup for ${escapeHtml(host.name)}.
+          Start free and we will generate the ready Iris setup for ${escapeHtml(host.name)}.
         </p>
-        <p class="setup-note">We only show the pieces you need for this host.</p>
         <div class="inline-actions">
           <button class="button button-primary" data-action="continue-free">
             ${state.actionState === "loading" ? "Starting…" : escapeHtml(host.ctaLabel || "Start Iris")}
           </button>
+          <a class="button-link" href="#how-it-works">See how it works</a>
         </div>
         <p class="status-copy">No payment is required during beta.</p>
       </div>
     `;
   }
 
-  if (host.id === "codex") {
-    return `
-      <div class="connection-panel">
-        <p class="utility-label">${escapeHtml(host.ctaLabel || "")}</p>
-        <p class="connection-intro">${escapeHtml(host.setupCopy || "")}</p>
-        <div class="prompt-note">
-          <div class="prompt-note__header">
-            <p class="utility-label">Codex setup</p>
-            ${renderCopyButton({
-              key: `setup:${host.id}`,
-              value: buildCodexSetupDetails(host),
-              label: "Codex setup"
-            })}
-          </div>
-          <pre class="code-block code-block--display">${escapeHtml(buildDisplayCodexSetupDetails(host))}</pre>
-        </div>
-      </div>
-    `;
-  }
-
-  const guidedSteps = host.steps || [];
-
   return `
     <div class="connection-panel">
       <p class="utility-label">${escapeHtml(host.ctaLabel || "")}</p>
       <p class="connection-intro">${escapeHtml(host.setupCopy || "")}</p>
       <ol class="guided-steps">
-        ${guidedSteps.map((step) => `<li>${escapeHtml(step)}</li>`).join("")}
+        ${(host.steps || []).map((step) => `<li>${escapeHtml(step)}</li>`).join("")}
       </ol>
-      <div class="prompt-note">
-        <div class="prompt-note__header">
-          <p class="utility-label">${escapeHtml(host.name)} setup</p>
-          ${renderCopyButton({
-            key: `setup:${host.id}`,
-            value: buildIrisSetupDetails(host),
-            label: `${host.name} setup`
-          })}
-        </div>
-        <pre class="code-block code-block--display">${escapeHtml(buildDisplayIrisSetupDetails(host))}</pre>
-      </div>
+      ${(host.installArtifacts || []).map((artifact) => renderInstallArtifact(host, artifact)).join("")}
     </div>
   `;
 }
@@ -383,8 +303,10 @@ function renderHomePage() {
         <p class="overline">Where Iris works</p>
         <h2>Pick the host that fits the work and start from the same review-first posture.</h2>
         <p>
-          Cursor is the easiest path. Codex is the cleanest technical path. ChatGPT and Claude stay
-          guided. Figma is part of the broader beta, but not the main onboarding story here.
+          Cursor is the easiest path. Codex is the cleanest technical path. ChatGPT and Claude still
+          use host-native flows, but Iris now generates the exact setup they need instead of leaving
+          you to assemble the connection yourself. Figma remains part of the broader beta, but it is
+          not the main onboarding story here.
         </p>
       </div>
       ${renderSurfaceTabs()}
@@ -395,6 +317,7 @@ function renderHomePage() {
           <p class="overline">${escapeHtml(host.capabilityLabel || "")}</p>
           <h2>${escapeHtml(host.name)}</h2>
           <p>${escapeHtml(host.summary)}</p>
+          <p class="host-detail">${escapeHtml(host.setupCopy || "")}</p>
         </div>
         <div class="selected-surface__panel">
           ${buildHostSetupBlock(host, supportHref)}
@@ -430,7 +353,7 @@ function renderHomePage() {
         <h2>Keep the beta boundaries visible.</h2>
         <p>
           Iris should make it easy to understand how to start, what the free path includes, and how to
-          get help without sending people through a maze.
+          ask for help without making the support path feel hidden.
         </p>
       </div>
       ${renderTrustPoints()}
@@ -450,6 +373,15 @@ async function hydrateLiveInstallModel() {
   try {
     const payload = await fetchLiveInstallPayload();
     state.installModel = mergeInstallModel(state.installModel, payload);
+
+    if (state.tokenBundle?.token) {
+      state.installModel = mergeInstallModel(
+        state.installModel,
+        buildSiteInstallModel({
+          installToken: state.tokenBundle.token
+        })
+      );
+    }
   } catch {
     // The local shared owner already gives us a usable build-time model.
   }
@@ -473,7 +405,7 @@ async function handleContinueFree() {
       state.installModel = mergeInstallModel(state.installModel, bundle.install);
     }
 
-    state.notice = `Iris is ready for ${host.name}. Copy the setup below, then start with the suggested first prompt.`;
+    state.notice = `Iris is ready for ${host.name}. Copy the generated setup below and start with the suggested first prompt.`;
   } catch (error) {
     state.error = error instanceof Error ? error.message : "Unable to start Iris from this page.";
   } finally {

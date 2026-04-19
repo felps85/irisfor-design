@@ -96,7 +96,7 @@ export const FAQ_ITEMS = [
   {
     question: "Is install really one-click yet?",
     answer:
-      "Not everywhere. Cursor is the closest thing to that experience today. The other supported hosts are still guided setups."
+      "Not everywhere. Host-native install still depends on what each product supports, but Iris now generates the ready setup block or exact connection values for every supported host so people are not left assembling the config themselves."
   }
 ];
 
@@ -115,11 +115,12 @@ export const TRUST_POINTS = [
   }
 ];
 
-export function buildSiteInstallModel() {
+export function buildSiteInstallModel(options = {}) {
   return buildPublicBetaInstallModel({
     productName: SITE_CONFIG.appName,
     endpoint: resolveRemoteMcpEndpoint(),
-    surface: "general_llm"
+    surface: "general_llm",
+    installToken: options.installToken
   });
 }
 
