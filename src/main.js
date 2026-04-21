@@ -8,9 +8,9 @@ import { escapeHtml, renderSiteFrame } from "./site-shell.js";
 const app = document.querySelector("#app");
 const hostParam = new URLSearchParams(window.location.search).get("host");
 const storedTokenBundle = loadStoredInstallToken();
-const initialModel = buildSiteInstallModel({
-  installToken: storedTokenBundle?.token
-});
+const initialModel = storedTokenBundle?.install
+  ? mergeInstallModel(buildSiteInstallModel(), storedTokenBundle.install)
+  : buildSiteInstallModel();
 const DISPLAY_HOST_IDS = new Set(["cursor", "codex", "chatgpt", "claude", "figma"]);
 const FIGMA_HOST = {
   id: "figma",
@@ -85,11 +85,7 @@ function renderInstallArtifact(host, artifact) {
           label: `${host.name} setup`
         })}
       </div>
-      <pre class="code-block code-block--display">${escapeHtml(
-        artifact.kind === "fields"
-          ? artifact.fields.map((field) => `${field.label}: ${field.value}`).join("\n")
-          : artifact.content || ""
-      )}</pre>
+      <p class="status-copy">The setup stays hidden on the page. Use copy when you are ready.</p>
     </div>
   `;
 }
@@ -374,13 +370,8 @@ async function hydrateLiveInstallModel() {
     const payload = await fetchLiveInstallPayload();
     state.installModel = mergeInstallModel(state.installModel, payload);
 
-    if (state.tokenBundle?.token) {
-      state.installModel = mergeInstallModel(
-        state.installModel,
-        buildSiteInstallModel({
-          installToken: state.tokenBundle.token
-        })
-      );
+    if (state.tokenBundle?.install) {
+      state.installModel = mergeInstallModel(state.installModel, state.tokenBundle.install);
     }
   } catch {
     // The local shared owner already gives us a usable build-time model.

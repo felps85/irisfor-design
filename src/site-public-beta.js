@@ -1,5 +1,4 @@
 const DEFAULT_PUBLIC_BETA_ENDPOINT = "https://www.irisfor.design/mcp";
-const DISPLAY_INSTALL_TOKEN = "<your personal Iris token>";
 
 const DEFAULT_STARTUP = {
   surface: "general_llm",
@@ -67,10 +66,11 @@ const DEFAULT_HOSTS = [
     summary:
       "The cleanest technical path when you want Iris near build, review, and system work.",
     setupCopy:
-      "Copy one setup block into Codex, then start with a review-first prompt.",
+      "Start free once and Iris gives you one copyable Codex desktop setup instead of leaving the token and connection details exposed on the page.",
     steps: [
       "Start free once from the Iris site.",
-      "Paste the setup block into Codex.",
+      "Copy the generated Codex desktop setup.",
+      "Run it in Terminal, then fully restart Codex desktop.",
       "Start with a review-first prompt before implementation."
     ],
     firstPrompt: "Review this codebase and the design system before we implement the next change.",
@@ -153,178 +153,6 @@ function deepClone(value) {
   return JSON.parse(JSON.stringify(value));
 }
 
-function interpolateInstallText(value, replacements) {
-  return String(value)
-    .replaceAll("{{endpoint}}", replacements.endpoint)
-    .replaceAll("{{token}}", replacements.token)
-    .replaceAll("{{firstPrompt}}", replacements.firstPrompt);
-}
-
-function createCodeArtifact(id, title, description, language, template) {
-  return {
-    id,
-    kind: "code",
-    title,
-    description,
-    language,
-    template
-  };
-}
-
-function createFieldsArtifact(id, title, description, fields) {
-  return {
-    id,
-    kind: "fields",
-    title,
-    description,
-    fields
-  };
-}
-
-function getHostInstallArtifactDefinitions(hostId) {
-  if (hostId === "cursor") {
-    return [
-      createCodeArtifact(
-        "cursor-mcp-json",
-        "Cursor mcp.json",
-        "Paste into ~/.cursor/mcp.json or .cursor/mcp.json.",
-        "json",
-        `{
-  "mcpServers": {
-    "iris": {
-      "url": "{{endpoint}}",
-      "headers": {
-        "Authorization": "Bearer {{token}}"
-      }
-    }
-  }
-}`
-      )
-    ];
-  }
-
-  if (hostId === "codex") {
-    return [
-      createCodeArtifact(
-        "codex-command",
-        "Codex command",
-        "Run this once in your shell for the fastest setup path.",
-        "bash",
-        `IRIS_MCP_TOKEN="{{token}}" codex mcp add iris --url {{endpoint}} --bearer-token-env-var IRIS_MCP_TOKEN`
-      ),
-      createCodeArtifact(
-        "codex-config",
-        "Codex config.toml fallback",
-        "Use this only if you prefer adding Iris directly in ~/.codex/config.toml.",
-        "toml",
-        `[mcp_servers.iris]
-url = "{{endpoint}}"
-bearer_token_env_var = "IRIS_MCP_TOKEN"`
-      )
-    ];
-  }
-
-  if (hostId === "chatgpt") {
-    return [
-      createFieldsArtifact(
-        "chatgpt-values",
-        "ChatGPT connection values",
-        "Create an app from a remote MCP server in ChatGPT Developer mode and use these generated values when ChatGPT asks for the connection.",
-        [
-          {
-            label: "Connection name",
-            value: "Iris"
-          },
-          {
-            label: "Iris connection URL",
-            value: "{{endpoint}}"
-          },
-          {
-            label: "Personal Iris token",
-            value: "{{token}}"
-          }
-        ]
-      )
-    ];
-  }
-
-  if (hostId === "claude") {
-    return [
-      createCodeArtifact(
-        "claude-command",
-        "Claude setup command",
-        "Run this once in your shell to add Iris as a remote MCP server in Claude Code.",
-        "bash",
-        `claude mcp add --transport http iris {{endpoint}} --header "Authorization: Bearer {{token}}"`
-      ),
-      createCodeArtifact(
-        "claude-json",
-        "Claude .mcp.json fallback",
-        "Use this if you prefer adding Iris directly in a shared or user .mcp.json file.",
-        "json",
-        `{
-  "mcpServers": {
-    "iris": {
-      "type": "http",
-      "url": "{{endpoint}}",
-      "headers": {
-        "Authorization": "Bearer {{token}}"
-      }
-    }
-  }
-}`
-      )
-    ];
-  }
-
-  if (hostId === "gemini_cli") {
-    return [
-      createCodeArtifact(
-        "gemini-settings",
-        "Gemini settings.json",
-        "Add this block under mcpServers in ~/.gemini/settings.json or .gemini/settings.json.",
-        "json",
-        `{
-  "mcpServers": {
-    "iris": {
-      "httpUrl": "{{endpoint}}",
-      "headers": {
-        "Authorization": "Bearer {{token}}"
-      }
-    }
-  }
-}`
-      )
-    ];
-  }
-
-  return [];
-}
-
-function materializeInstallArtifacts(host, options = {}) {
-  const replacements = {
-    endpoint: options.endpoint || DEFAULT_PUBLIC_BETA_ENDPOINT,
-    token: options.installToken || DISPLAY_INSTALL_TOKEN,
-    firstPrompt: host.firstPrompt || ""
-  };
-
-  return getHostInstallArtifactDefinitions(host.id).map((artifact) => {
-    const { template, ...rest } = artifact;
-
-    return {
-      ...rest,
-      content:
-        typeof template === "string" ? interpolateInstallText(template, replacements) : null,
-      fields: Array.isArray(artifact.fields)
-        ? artifact.fields.map((field) => ({
-            ...field,
-            value: interpolateInstallText(field.value, replacements)
-          }))
-        : []
-    };
-  });
-}
-
 export function buildPublicBetaInstallModel(options = {}) {
   return {
     productName: options.productName || "Iris",
@@ -336,7 +164,7 @@ export function buildPublicBetaInstallModel(options = {}) {
       "During beta, selected users can receive Pro-level access without payment while Iris learns from real usage.",
     hosts: deepClone(DEFAULT_HOSTS).map((host) => ({
       ...host,
-      installArtifacts: materializeInstallArtifacts(host, options)
+      installArtifacts: []
     })),
     transparencyNotes: deepClone(DEFAULT_TRANSPARENCY_NOTES),
     learningNotes: deepClone(DEFAULT_LEARNING_NOTES)

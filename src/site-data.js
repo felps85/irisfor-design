@@ -119,8 +119,7 @@ export function buildSiteInstallModel(options = {}) {
   return buildPublicBetaInstallModel({
     productName: SITE_CONFIG.appName,
     endpoint: resolveRemoteMcpEndpoint(),
-    surface: "general_llm",
-    installToken: options.installToken
+    surface: "general_llm"
   });
 }
 

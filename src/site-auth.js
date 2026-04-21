@@ -6,7 +6,7 @@ import {
 } from "./site-config.js";
 
 const SESSION_STORAGE_KEY = "iris.site.testing-session.v1";
-const TOKEN_STORAGE_KEY = "iris.site.install-token.v1";
+const TOKEN_STORAGE_KEY = "iris.site.install-token.v2";
 
 function readStoredJson(key) {
   try {
