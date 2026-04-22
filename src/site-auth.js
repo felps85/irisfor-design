@@ -1,6 +1,4 @@
 import {
-  SITE_CONFIG,
-  resolveAuthBaseUrl,
   resolveFunctionsBaseUrl,
   resolveRemoteMcpEndpoint
 } from "./site-config.js";
@@ -28,7 +26,6 @@ function writeStoredJson(key, value) {
 
 function authHeaders(accessToken) {
   return {
-    apikey: SITE_CONFIG.supabasePublishableKey,
     "Content-Type": "application/json",
     ...(accessToken
       ? {
@@ -100,18 +97,22 @@ function isTokenExpired(tokenBundle) {
   return new Date(expiresAt).getTime() <= Date.now();
 }
 
+async function requestInstallSession(payload) {
+  return fetchJson(`${resolveFunctionsBaseUrl()}/install-session`, {
+    method: "POST",
+    headers: authHeaders(),
+    body: JSON.stringify(payload)
+  });
+}
+
 async function signInForTesting() {
   try {
-    const payload = await fetchJson(`${resolveAuthBaseUrl()}/auth/v1/signup`, {
-      method: "POST",
-      headers: authHeaders(),
-      body: JSON.stringify({
-        data: {
-          source: "website_start_iris",
-          surface: "general_llm",
-          mode: "testing"
-        }
-      })
+    const payload = await requestInstallSession({
+      data: {
+        source: "website_start_iris",
+        surface: "general_llm",
+        mode: "testing"
+      }
     });
 
     return normalizeSession(payload?.session ?? payload);
@@ -133,16 +134,9 @@ async function refreshSession(session) {
     return null;
   }
 
-  const payload = await fetchJson(
-    `${resolveAuthBaseUrl()}/auth/v1/token?grant_type=refresh_token`,
-    {
-      method: "POST",
-      headers: authHeaders(),
-      body: JSON.stringify({
-        refresh_token: session.refreshToken
-      })
-    }
-  );
+  const payload = await requestInstallSession({
+    refreshToken: session.refreshToken
+  });
 
   const refreshed = normalizeSession(payload);
   writeStoredJson(SESSION_STORAGE_KEY, refreshed);
