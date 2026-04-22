@@ -1,8 +1,12 @@
-import { SITE_CONFIG, buildStartIrisHostHref, resolveSiteHref } from "./site-config.js";
+import "./styles.css";
 
-const hostParam = new URLSearchParams(window.location.search).get("host");
-const nextHref = hostParam
-  ? buildStartIrisHostHref(hostParam, "../")
-  : resolveSiteHref(SITE_CONFIG.startIrisHref, "../");
+import { renderProjectStatusPage } from "./project-status.js";
 
-window.location.replace(nextHref);
+const app = document.querySelector("#app");
+
+renderProjectStatusPage({
+  app,
+  currentPage: "install",
+  rootPrefix: "../",
+  pageClass: "status-page inner-page"
+});
