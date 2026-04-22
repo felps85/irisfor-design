@@ -113,7 +113,7 @@ function renderSupportPage() {
               name="goal"
               rows="4"
               required
-              placeholder="Example: I was trying to start Iris in Cursor and expected the connection details to appear after pressing Continue free."
+              placeholder="Example: I was trying to add Iris in Cursor and expected the connection setup to appear after pressing Add Iris."
             ></textarea>
           </label>
 
@@ -138,7 +138,7 @@ function renderSupportPage() {
 
           <div class="button-row">
             <button class="button button-primary" type="submit">Send support request</button>
-            <a class="button button-secondary" href="${resolveSiteHref(SITE_CONFIG.startIrisHref, "../")}">Start Iris</a>
+            <a class="button button-secondary" href="${resolveSiteHref(SITE_CONFIG.startIrisHref, "../")}">Add Iris</a>
           </div>
         </form>
 

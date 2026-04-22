@@ -178,13 +178,15 @@ function buildHostSetupBlock(host, supportHref) {
   if (!state.tokenBundle?.token) {
     return `
       <div class="connection-panel connection-panel--simple">
-        <p class="utility-label">Free beta access</p>
+        <p class="utility-label">Add Iris</p>
         <p class="connection-intro">
-          Start free and we will generate the ready Iris setup for ${escapeHtml(host.name)}.
+          Start free and Iris will prepare the right setup for ${escapeHtml(
+            host.name
+          )}. The quick add gets Iris into your workflow first.
         </p>
         <div class="inline-actions">
           <button class="button button-primary" data-action="continue-free">
-            ${state.actionState === "loading" ? "Starting…" : escapeHtml(host.ctaLabel || "Start Iris")}
+            ${state.actionState === "loading" ? "Preparing…" : escapeHtml(host.ctaLabel || "Add Iris")}
           </button>
           <a class="button-link" href="#how-it-works">See how it works</a>
         </div>
@@ -195,7 +197,7 @@ function buildHostSetupBlock(host, supportHref) {
 
   return `
     <div class="connection-panel">
-      <p class="utility-label">${escapeHtml(host.ctaLabel || "")}</p>
+      <p class="utility-label">Connect Iris</p>
       <p class="connection-intro">${escapeHtml(host.setupCopy || "")}</p>
       <ol class="guided-steps">
         ${(host.steps || []).map((step) => `<li>${escapeHtml(step)}</li>`).join("")}
@@ -255,13 +257,14 @@ function renderHomePage() {
     <section class="hero-section">
       <div class="hero-copy">
         <p class="overline">Iris / Design intelligence for LLMs, Figma, and build work</p>
-        <h1 class="display-title">Start with review. Keep the judgment. Change only when it is time.</h1>
+        <h1 class="display-title">Add Iris quickly. Connect it when the work gets deeper.</h1>
         <p class="lead">
-          Iris helps teams understand the goal, review what already exists, explain the safest next
-          step, and stay useful across Cursor, Codex, ChatGPT, Claude, and Figma.
+          Iris starts by reviewing what already exists. Add it in the host you already use, then
+          connect it for deeper review, memory, and shared intelligence across Cursor, Codex,
+          ChatGPT, Claude, and Figma.
         </p>
         <div class="button-row">
-          <a class="button button-primary" href="${escapeHtml(startHref)}">Start Iris</a>
+          <a class="button button-primary" href="${escapeHtml(startHref)}">Add Iris</a>
           <a class="button button-secondary" href="#how-it-works">See how it works</a>
         </div>
       </div>
@@ -283,10 +286,10 @@ function renderHomePage() {
     <section class="section" id="how-it-works">
       <div class="section-intro">
         <p class="overline">How Iris works</p>
-        <h2>One operating model from the first question to the next real change.</h2>
+        <h2>One operating model from the first question to the connected runtime.</h2>
         <p>
-          Iris should not make you learn backend language to get value. The product should feel clear
-          before it feels technical.
+          The first step should feel light. When the work gets deeper, Iris should prepare the right
+          connection instead of making you piece the setup together by hand.
         </p>
       </div>
       <div class="process-grid">
@@ -297,12 +300,11 @@ function renderHomePage() {
     <section class="section start-section" id="start-iris">
       <div class="section-intro">
         <p class="overline">Where Iris works</p>
-        <h2>Pick the host that fits the work and start from the same review-first posture.</h2>
+        <h2>Pick the host that fits the work. Iris handles the next step from there.</h2>
         <p>
-          Cursor is the easiest path. Codex is the cleanest technical path. ChatGPT and Claude still
-          use host-native flows, but Iris now generates the exact setup they need instead of leaving
-          you to assemble the connection yourself. Figma remains part of the broader beta, but it is
-          not the main onboarding story here.
+          Each host keeps its own install shape, but the pattern stays the same: add Iris quickly,
+          then use the generated connection when you want the fuller runtime. Figma remains part of
+          the broader beta, but it is not the main onboarding story here.
         </p>
       </div>
       ${renderSurfaceTabs()}
@@ -348,8 +350,8 @@ function renderHomePage() {
         <p class="overline">Trust</p>
         <h2>Keep the beta boundaries visible.</h2>
         <p>
-          Iris should make it easy to understand how to start, what the free path includes, and how to
-          ask for help without making the support path feel hidden.
+          Iris should make it easy to understand how to begin, when connection matters, and how to ask
+          for help without turning the public site into infrastructure copy.
         </p>
       </div>
       ${renderTrustPoints()}
@@ -396,7 +398,7 @@ async function handleContinueFree() {
       state.installModel = mergeInstallModel(state.installModel, bundle.install);
     }
 
-    state.notice = `Iris is ready for ${host.name}. Copy the generated setup below and start with the suggested first prompt.`;
+    state.notice = `Iris is ready for ${host.name}. Copy the setup below, finish the host step once, and start with the suggested prompt.`;
   } catch (error) {
     state.error = error instanceof Error ? error.message : "Unable to start Iris from this page.";
   } finally {

@@ -5,9 +5,9 @@ import { SITE_CONFIG, resolveRemoteMcpEndpoint } from "./site-config.js";
 export const HOME_PROCESS = [
   {
     step: "01",
-    title: "Understand the goal",
+    title: "Add Iris quickly",
     copy:
-      "Iris starts by understanding what you are trying to make instead of forcing you into a technical workflow first."
+      "Choose the host you already use and get Iris into the workflow without starting from backend details."
   },
   {
     step: "02",
@@ -17,15 +17,15 @@ export const HOME_PROCESS = [
   },
   {
     step: "03",
-    title: "Explain the safest next step",
+    title: "Connect Iris for Iris Core",
     copy:
-      "Iris turns judgment into plain-language guidance, critique, or a careful plan so you can decide what should happen next."
+      "When the work gets deeper, Iris should prepare the right connection for that host so Iris Core can unlock stronger review, continuity, and shared intelligence."
   },
   {
     step: "04",
-    title: "Move into change only when asked",
+    title: "Keep moving with context",
     copy:
-      "Iris can help with implementation and comments later, but it should stay clear about when it is reviewing, proposing, or actually acting."
+      "Once connected, Iris can stay consistent across critique, direction, and implementation support without losing the review-first posture."
   }
 ];
 
@@ -84,9 +84,9 @@ export const FAQ_ITEMS = [
       "Free includes up to 10 interactions every 7 days during beta. No payment is required to start."
   },
   {
-    question: "What does memory mean here?",
+    question: "Why does Iris ask me to connect after install?",
     answer:
-      "Iris keeps session context during the current task. Longer-term memory should only happen with clear permission, and durable product learning stays review-before-keep."
+      "The quick add gets Iris into your workflow fast. Connecting turns on the fuller runtime for deeper review, continuity across work, and shared intelligence."
   },
   {
     question: "How does privacy work?",
@@ -110,8 +110,8 @@ export const TRUST_POINTS = [
     copy: "Iris is built to review what already exists first and move into change only when you clearly ask it to."
   },
   {
-    title: "Support stays visible",
-    copy: "If the setup feels unclear or broken, the support path stays close instead of disappearing behind technical steps."
+    title: "Clear connection path",
+    copy: "Iris should get into the host quickly, then prepare the right connection details instead of leaving you with loose pieces."
   }
 ];
 

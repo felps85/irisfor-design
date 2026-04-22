@@ -38,16 +38,16 @@ const DEFAULT_HOSTS = [
     installType: "one_click_candidate",
     installExperience: "easy",
     installDifficultyLabel: "Closest thing to one-click",
-    capabilityLabel: "Easiest path",
-    ctaLabel: "Add to Cursor",
+    capabilityLabel: "Easiest start",
+    ctaLabel: "Add Iris to Cursor",
     summary:
-      "The easiest place to bring Iris close to the work when you want review and direction without much setup.",
+      "The easiest place to add Iris near the work when you want review and direction without much setup.",
     setupCopy:
-      "Start free once and Iris generates the ready Cursor config instead of leaving you to assemble the connection yourself.",
+      "Add Iris to Cursor first. When you want the connected runtime, Iris generates the ready Cursor setup for you.",
     steps: [
       "Start free once from the Iris site.",
-      "Copy the generated Cursor setup block.",
-      "Paste it into Cursor and keep the same connection for future sessions.",
+      "Copy the generated Cursor setup.",
+      "Paste it into Cursor to connect Iris and keep the same connection for future sessions.",
       "Begin with the first prompt so Iris reviews before changing anything."
     ],
     firstPrompt: "Review this project first and tell me the safest next step before we change anything.",
@@ -61,16 +61,16 @@ const DEFAULT_HOSTS = [
     installType: "technical_remote_mcp",
     installExperience: "technical",
     installDifficultyLabel: "Single-command technical path",
-    capabilityLabel: "Technical install",
-    ctaLabel: "Start in Codex",
+    capabilityLabel: "Technical path",
+    ctaLabel: "Add Iris to Codex",
     summary:
       "The cleanest technical path when you want Iris near build, review, and system work.",
     setupCopy:
-      "Start free once and Iris gives you one copyable Codex desktop setup instead of leaving the token and connection details exposed on the page.",
+      "Add Iris quickly, then run one desktop-safe setup so Codex can use the connected Iris runtime.",
     steps: [
       "Start free once from the Iris site.",
       "Copy the generated Codex desktop setup.",
-      "Run it in Terminal, then fully restart Codex desktop.",
+      "Run it in Terminal, then fully restart Codex desktop to connect Iris.",
       "Start with a review-first prompt before implementation."
     ],
     firstPrompt: "Review this codebase and the design system before we implement the next change.",
@@ -84,16 +84,16 @@ const DEFAULT_HOSTS = [
     installType: "guided_remote_mcp",
     installExperience: "guided",
     installDifficultyLabel: "Guided setup",
-    capabilityLabel: "Guided install",
-    ctaLabel: "Set up in ChatGPT",
+    capabilityLabel: "Guided path",
+    ctaLabel: "Add Iris to ChatGPT",
     summary:
-      "A familiar place to use Iris for product thinking, critique, and careful direction.",
+      "A familiar place to add Iris for product thinking, critique, and careful direction.",
     setupCopy:
-      "Turn on Developer mode once, then let Iris generate the exact connection values ChatGPT needs.",
+      "Add Iris to ChatGPT first, then use the generated connection values when you are ready to turn on the connected runtime.",
     steps: [
       "Turn on Developer mode in ChatGPT settings.",
       "Create an app from a remote MCP server.",
-      "Use the generated Iris connection values when ChatGPT asks for the connection.",
+      "Use the generated Iris connection values to connect Iris when ChatGPT asks for the connection.",
       "Start with the first prompt and let Iris explain the safest next step."
     ],
     firstPrompt: "Review this page and tell me what is working before we decide what to change.",
@@ -107,16 +107,16 @@ const DEFAULT_HOSTS = [
     installType: "guided_remote_mcp",
     installExperience: "guided",
     installDifficultyLabel: "Guided setup",
-    capabilityLabel: "Guided install",
-    ctaLabel: "Set up in Claude",
+    capabilityLabel: "Guided path",
+    ctaLabel: "Add Iris to Claude",
     summary:
       "A quieter guided path for critique, framing, and review-first reasoning.",
     setupCopy:
-      "Generate one ready Claude setup command so the install does not depend on guessing the connection details.",
+      "Add Iris first, then use the generated Claude setup so the connected runtime does not depend on guessing the details.",
     steps: [
       "Start free once from the Iris site.",
       "Copy the generated Claude setup command.",
-      "Run it in Claude Code or use the generated JSON if you prefer config files.",
+      "Run it in Claude Code or use the generated JSON to connect Iris if you prefer config files.",
       "Start with the first prompt so Iris reviews before proposing changes."
     ],
     firstPrompt: "Review this interface and tell me what deserves attention before we make changes.",

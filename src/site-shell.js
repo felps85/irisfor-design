@@ -41,7 +41,7 @@ export function renderSiteFrame({ app, currentPage, rootPrefix = "./", pageClass
           ${renderNavLink({ href: homeHref, label: "Home", current: currentPage === "home" })}
           ${renderNavLink({
             href: installHref,
-            label: "Start Iris",
+            label: "Add Iris",
             current: currentPage === "install"
           })}
           ${renderNavLink({
@@ -60,9 +60,9 @@ export function renderSiteFrame({ app, currentPage, rootPrefix = "./", pageClass
       <main class="page-stack ${escapeHtml(pageClass)}">${content}</main>
 
       <footer class="site-footer">
-        <p>Iris is in public beta. It should review before it acts, explain the safest next step, and stay clear about what changed and what did not.</p>
+        <p>Iris is in public beta. It should review before it acts, connect clearly when the work gets deeper, and stay clear about what changed and what did not.</p>
         <div class="site-footer__links">
-          <a href="${escapeHtml(installHref)}">Start Iris</a>
+          <a href="${escapeHtml(installHref)}">Add Iris</a>
           <a href="${escapeHtml(privacyHref)}">Privacy</a>
           <a href="${escapeHtml(supportHref)}">Support</a>
         </div>
